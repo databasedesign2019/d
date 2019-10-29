@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Books-Mangement-System-php-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_book.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_book_add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_book_del.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_book_edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_book_guihuan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_book_jiechu.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_borrow_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_reader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_reader_add.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_reader_del.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_reader_edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin_repass.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login_check.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysqli_connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader_borrow.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader_guashi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader_guashi_do.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader_index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader_info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader_info_edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader_querybook.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reader_repass.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="172.0.0.2" id="9bf9397f-2fd2-4517-997e-cdec6347d27d" name="Unnamed" />
+    </servers>
+  </component>
+  <component name="ProjectId" id="1SsjyfGSgJYYoBSovFxOb48OObi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/php-7.3.11/run-tests.php" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="" />
+      <created>1572358109769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572358109769</updated>
+      <workItem from="1572358112108" duration="373000" />
+      <workItem from="1572359487205" duration="3215000" />
+      <workItem from="1572364681308" duration="5298000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
