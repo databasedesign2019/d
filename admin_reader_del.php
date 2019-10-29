@@ -26,16 +26,16 @@ if($resulta['a']==0) {
     $resb = mysqli_query($dbc, $sqlb);
 
     if ($resa == 1 && $resb == 1) {
-        echo "<script>alert('删除成功！')</script>";
+        echo "<script>alert('삭제 성공!')</script>";
         echo "<script>window.location.href='admin_reader.php'</script>";
     }
     else {
-        echo "删除失败！";
+        echo "삭제 실폐!";
         echo "<script>window.location.href='admin_reader.php'</script>";
     }
 }
 else {
-    echo "<script>alert('不能删除该读者！')</script>";
+    echo "<script>alert('사용자 삭제할 수 없다！')</script>";
     echo "<script>window.location.href='admin_reader.php'</script>";
 }
 

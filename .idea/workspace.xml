@@ -2,37 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Books-Mangement-System-php-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/a.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_book_add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_book_del.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_book_edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_book_guihuan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_book_jiechu.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_borrow_info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_reader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_reader_add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_reader_del.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_reader_edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin_repass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login_check.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysqli_connect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader_borrow.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader_guashi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader_guashi_do.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader_index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader_info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader_info_edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader_querybook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reader_repass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_borrow_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_borrow_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_reader_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader_add.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +103,7 @@
       <updated>1572358109769</updated>
       <workItem from="1572358112108" duration="373000" />
       <workItem from="1572359487205" duration="3215000" />
-      <workItem from="1572364681308" duration="5298000" />
+      <workItem from="1572364681308" duration="5757000" />
     </task>
     <servers />
   </component>
