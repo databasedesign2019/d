@@ -40,7 +40,7 @@
     </div>
 </nav>
 <br/><br/><h3 style="text-align: center">추석연휴 휴관 안내</h3><br/>
-
+<br/><br/><h5 style="text-align: center">2019-09-10 22:57</h5><br/>
 <br/><br/><h4 style="text-align: center">추석 연휴 휴관 안내 추석 연휴 기간 동안 학술 정보원 자료실을 아래와 같이 휴관 하오니 이용에 참고하시기 바랍니다. · 일시 : 2019 년 9 월 12 일 (목) ~ 9 월 15 일 (일) · 대상 : 대출 자료실, 참고 자료실, 미디어 실, </h4><br/>
 <br/><br/>><h4 style="text-align: center">Learning Commons ※ 열람실은 정상 운영합니다. ※ 대출 자료의 반납 예 정 일은 9 월 16 일 (월)으로 자동 연장됩니다. </h4><br/>
 <br/><h4 style="text-align: center"><a href='reader_index.php' style='color:red;text-align: center'>Back</a></h4><br/><br/>
