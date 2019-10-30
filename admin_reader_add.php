@@ -56,10 +56,11 @@ include ('mysqli_connect.php');
         <div id="login">
             <div class="input-group"><span class="input-group-addon">사용자 번호</span><input name="nid" type="text" placeholder="사용자 번호 입력하시오" class="form-control"></div><br/>
             <div class="input-group"><span class="input-group-addon">사용자 성명</span><input name="nname" type="text" placeholder="성명 입력하시오" class="form-control"></div><br/>
-            <div class="input-group"><span class="input-group-addon">성별</span><input name="nsex" type="text" placeholder="성별 입력하시오" class="form-control"></div><br/>
+            <div class="input-group"><span class="input-group-addon">성별 <select id="box2" select name="nsex"><option value="남">남</option><option value="여">여</option><option value="모름">모름</option></select></span></div><br/>
             <div class="input-group"><span class="input-group-addon">생일</span><input name="nbirth" type="text" placeholder="생일 입력하시오" class="form-control"></div><br/>
             <div class="input-group"><span class="input-group-addon">주소</span><input name="naddress" type="text" placeholder="주소 입력하시오" class="form-control"></div><br/>
             <div class="input-group"><span class="input-group-addon">휴데전화</span><input name="ntel" type="text" placeholder="전화 입력하시오" class="form-control"></div><br/>
+
             <input type="submit" value="추가" class="btn btn-default">
             <input type="reset" value="리셋" class="btn btn-default">
         </div>

@@ -28,39 +28,35 @@ date_default_timezone_set("PRC");
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-            <nav class="navbar navbar-default navbar-static-top" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">도서관 관리 시스템</a>
-                    </div>
-                    <div>
-                        <ul class="nav navbar-nav">
-                            <li ><a href="admin_index.php">홈페이지</a></li>
-                            <li class="dropdown" class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">서적 관리<b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="admin_book.php">모든 서적</a></li>
-                                    <li><a href="admin_book_add.php">서적 추가</a></li>
+            <a class="navbar-brand" href="#">도서관 관리 시스템</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li ><a href="admin_index.php">홈페이지</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">서적 관리<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin_book.php">모든 서적</a></li>
+                        <li><a href="admin_book_add.php">서적 추가</a></li>
 
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="admin_reader.php">모든 사용자</a></li>
-                                    <li><a href="admin_reader_add.php">사용자 추가</a></li>
-                                </ul>
-                            </li>
-                            <li><li class="active"><a href="admin_borrow_info.php">대출관리</a></li>
-                            <li><a href="admin_repass.php">암호 수정</a></li>
-                            <li><a href="index.php">로그아웃</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin_reader.php">모든 사용자</a></li>
+                        <li><a href="admin_reader_add.php">사용자 추가</a></li>
+                    </ul>
+                </li>
+                <li> <li class="active"><a href="admin_borrow_info.php">대출관리</a></li>
+                <li><a href="admin_repass.php">암호 수정</a></li>
+                <li><a href="index.php">로그아웃</a></li>
             </ul>
         </div>
     </div>
-</nav>
-<h1 style="text-align: center"><strong>대출관리</strong></h1>
+</nav><h1 style="text-align: center"><strong>대출관리</strong></h1>
 <form  id="query" action="admin_borrow_info.php" method="POST">
     <div id="query">
         <label ><input  name="bookquery" type="text" placeholder="도서명, 도서번호 또는 독자증호 입력" class="form-control"></label>
@@ -108,7 +104,7 @@ where book_info.book_id=lend_list.book_id;";
         echo "<td>{$row['yhrq']}</td>";
         echo "<td>{$row['back_date']}</td>";
         echo "<td>"; if($row['back_date']!=null) echo"반납</td>";else echo "미반납</td>";
-        echo "<td>"; if(date("Y-m-d")>$row['yhrq']) echo"초기</td>";else echo "未超期</td>";
+        echo "<td>"; if(date("Y-m-d")>$row['yhrq']) echo"초기</td>";else echo "미초기</td>";
         echo "</tr>";
     };
     ?>

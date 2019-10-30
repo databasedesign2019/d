@@ -31,14 +31,23 @@ $resultb=mysqli_fetch_array($resb);
         <div class="input-group"><span  class="input-group-addon">언어</span><input value="<?php echo $resultb['language']; ?>" name="nlanguage" type="text" placeholder="수정한 언어 입력하시오" class="form-control"></div><br/>
         <div class="input-group"><span class="input-group-addon">가격</span><input value="<?php echo $resultb['price']; ?>" name="nprice" type="text" placeholder="수정한 가격 입력하시오" class="form-control"></div><br/>
         <div class="input-group"><span  class="input-group-addon">출반 일기</span><input value="<?php echo $resultb['pubdate']; ?>" name="npubdate" type="text" placeholder="수정한 출반 일기 입력하시오" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">구분호</span><input  value="<?php echo $resultb['class_id']; ?>" name="nclass_id" type="text" placeholder="수정한 구분호 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">구분 <select id="selector" select name="nclass_id"><option value="1">컴퓨터 과학</option><option value="2">철학</option><option value="3">사회 과학 </option><option value="4">정치 법률</option><option value="5">군사</option><option value="6">경제</option><option value="7">문화</option><option value="8">언어</option><option value="9">문학</option><option value="10">예술</option><option value="11">역사 지리</option><option value="12">자연 과학</option><option value="13">수리 과학과 화학</option><option value="14">천문학, 지구 과학</option><option value="15">생물과학</option><option value="16">의약, 위생</option><option value="17">농업과학</option><option value="18">공업 기술</option><option value="19">교통운수</option><option value="20">항공, 우주 비행</option><option value="21">환경 과학</option><option value="22">종합</option></select></span></div><br/>
         <div class="input-group"><span  class="input-group-addon">책장호</span><input value="<?php echo $resultb['pressmark']; ?>" name="npressmark" type="text" placeholder="수정한 책장호 입력하시오" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">상태</span><input value="<?php echo $resultb['state']; ?>" name="nstate" type="text" placeholder="수정한 상태 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">상태 <select id="box" select name="nstate"><option value="0">대출중</option><option value="1">대출가능</option><option value="2">상태정보없음</option></select></div></span><br/>
         <label><input type="submit" value="확인" class="btn btn-default"></label>
         <label><input type="reset" value="리셋" class="btn btn-default"></label>
-    </div>
+        </div>
     </form>
+
 </div>
+
+<script type="text/javascript">
+    $(function(){
+        $("#selector").val(<?php echo $resultb['class_id']; ?>);
+        $("#box").val(<?php echo $resultb['state']; ?>);
+    })
+
+</script>
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
