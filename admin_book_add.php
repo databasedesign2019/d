@@ -14,6 +14,18 @@ include ('mysqli_connect.php');
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>도서관 || 도서추가</title>
 </head>
+<style>
+    body{
+        width: 1600px;
+        overflow: hidden;
+        background-repeat: repeat;
+        background-image: url("bg.jpg");
+        height: 855px;
+        background-size:cover;
+        color: antiquewhite;
+    }
+
+</style>
 <body>
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container-fluid">

@@ -16,7 +16,7 @@ include ('mysqli_connect.php');
         body{
             width: 100%;
             overflow: hidden;
-            background: url("bg.jpg") no-repeat;
+            background: url("bg.jpg") repeat;
             background-size:cover;
             color: antiquewhite;
         }

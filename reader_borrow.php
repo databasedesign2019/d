@@ -20,7 +20,8 @@ $result=mysqli_fetch_array($res);
         body{
             width: 100%;
             overflow: hidden;
-            background: url("bg.jpg") no-repeat;
+            background-repeat: repeat;
+            background-image: url("bg.jpg");
             background-size:cover;
             color: antiquewhite;
         }

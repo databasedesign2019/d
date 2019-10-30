@@ -17,7 +17,18 @@ $resultb=mysqli_fetch_array($resb);
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>도서관 | | 서적정보 수정</title>
+    <style>
+        body{
+            width: 100%;
+            overflow: hidden;
+            background: url("bg.jpg") repeat;
+            background-size:cover;
+            color: antiquewhite;
+        }
+
+    </style>
 </head>
+
 <body>
 <div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
     <div style="text-align: center">

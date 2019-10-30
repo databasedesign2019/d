@@ -19,7 +19,7 @@ if(isset($_SESSION['userid']))
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background: url("bg.jpg") no-repeat;
+            background: url("bg.jpg") repeat;
             background-size:cover;
             color: antiquewhite;
         }

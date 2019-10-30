@@ -6,14 +6,14 @@ include ('mysqli_connect.php');
 $sql="select name from reader_card where reader_id={$userid}";
 $res=mysqli_query($dbc,$sql);
 $result=mysqli_fetch_array($res);
-date_default_timezone_set("PRC");
+date_default_timezone_set("KR");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>我的图书馆</title>
+    <title>마이 도서관</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -21,7 +21,8 @@ date_default_timezone_set("PRC");
         body{
             width: 100%;
             overflow: hidden;
-            background: url("bg.jpg") no-repeat;
+            background-repeat: repeat;
+            background-image: url("../bg.jpg");
             background-size:cover;
             color: antiquewhite;
         }
@@ -42,7 +43,7 @@ date_default_timezone_set("PRC");
         <div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="reader_index.php">홈페이지</a></li>
-                <li><a href="reader_querybook.php">도서 조회</a></li>
+                <li><a href="../reader_querybook.php">도서 조회</a></li>
                 <li ><a href="reader_borrow.php">마이 대출</a></li>
                 <li><a href="reader_info.php">개인 정보</a></li>
                 <li><a href="reader_repass.php">암호 수정</a></li>
@@ -78,11 +79,9 @@ date_default_timezone_set("PRC");
     ?>
 </h4>ㄴ
 <div id="gonggao">
-    <a href="a.html" style="font-style: italic;color: white;text-decoration:replace-underline">馆内资讯：扬中华之美德 行传统毕业礼</a><br>
-    <a href="a.html" style="font-style: italic;color: white">通知公告：读者借阅规则</a><br>
-    <a href="a.html" style="font-style: italic;color: white">书单推荐：《朗读者》第一期、第二期最全书单：你读过几本？</a><br>
-    <a href="a.html" style="font-style: italic;color: white">书单推荐：5年内经得起时间考验的经典好书榜</a><br>
-    <a href="a.html" style="font-style: italic;color: white">书单推荐：第十一届文津图书奖获奖图书</a><br>
+    <a href="notice1.php" style="font-style: italic;color: white;text-decoration:replace-underline">공지상황:추석연휴 휴관 안내</a><br>
+    <a href="notice2.php" style="font-style: italic;color: white">문의상황：추연구비 구매도서 등록 확인서 양식 어디서 다운받나요.</a><br>
+    <a href="notice3.php" style="font-style: italic;color: white">여름휴가에 이 책 읽어보세요</a><br>
 
 </div>
 

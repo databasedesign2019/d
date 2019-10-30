@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/notice3.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_book_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_book_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_reader_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader_add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_reader_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_repass.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_repass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_borrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_borrow.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reader_guashi.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_guashi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_guashi_do.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_guashi_do.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reader_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_info.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reader_info_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_info_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_querybook.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_querybook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_repass.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_repass.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +38,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/php-7.3.11/run-tests.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -118,7 +113,7 @@
       <workItem from="1572364681308" duration="6012000" />
       <workItem from="1572408646612" duration="4606000" />
       <workItem from="1572417210681" duration="4932000" />
-      <workItem from="1572424462377" duration="3905000" />
+      <workItem from="1572424462377" duration="8240000" />
     </task>
     <servers />
   </component>

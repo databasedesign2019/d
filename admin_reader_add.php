@@ -14,39 +14,49 @@ include ('mysqli_connect.php');
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>도서관 || 사용자 증가</title>
 </head>
+<style>
+    body{
+        width: 100%;
+        overflow: hidden;
+        background: url("bg.jpg") repeat;
+        background-size:cover;
+        color: antiquewhite;
+    }
+
+</style>
 <body>
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-            <nav class="navbar navbar-default navbar-static-top" role="navigation">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">도서관 관리 시스템</a>
-                    </div>
-                    <div>
-                        <ul class="nav navbar-nav">
-                            <li ><a href="admin_index.php">홈페이지</a></li>
-                            <li class="dropdown" class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">서적 관리<b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="admin_book.php">모든 서적</a></li>
-                                    <li><a href="admin_book_add.php">서적 추가</a></li>
+            <a class="navbar-brand" href="#">도서관 관리 시스템</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li ><a href="admin_index.php">홈페이지</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">서적 관리<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin_book.php">모든 서적</a></li>
+                        <li><a href="admin_book_add.php">서적 증가</a></li>
 
-                                </ul>
-                            </li>
-                            <li class="active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="admin_reader.php">모든 사용자</a></li>
-                                    <li><a href="admin_reader_add.php">사용자 추가</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="admin_borrow_info.php">대출관리</a></li>
-                            <li><a href="admin_repass.php">암호 수정</a></li>
-                            <li><a href="index.php">로그아웃</a></li>
+                    </ul>
+                </li>
+                <li class="active" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin_reader.php">모든 사용자</a></li>
+                        <li><a href="admin_reader_add.php">사용자 증가</a></li>
+                    </ul>
+                </li>
+                <li><a href="admin_borrow_info.php">대출관리</a></li>
+                <li><a href="admin_repass.php">암호 수정</a></li>
+                <li><a href="index.php">로그아웃</a></li>
             </ul>
+        </div>
+    </div>
+</nav>
         </div>
     </div>
 </nav>
