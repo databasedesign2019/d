@@ -12,12 +12,12 @@ if($state==1){
 
     if($res==1)
     {
-        echo"<script>alert('挂失成功！')</script>";
+        echo"<script>alert('분실 성공！')</script>";
         echo "<script>window.location.href='reader_guashi.php'</script>";
     }
     else
     {
-        echo"<script>alert('挂失失败！')</script>";
+        echo"<script>alert('분실 실폐！')</script>";
         echo "<script>window.location.href='reader_guashi.php'</script>";
     }
 
@@ -29,12 +29,12 @@ else{
 
     if($resa==1)
     {
-        echo"<script>alert('取消挂失成功！')</script>";
+        echo"<script>alert('분실 취소 성공！')</script>";
         echo "<script>window.location.href='reader_guashi.php'</script>";
     }
     else
     {
-        echo"<script>alert('取消挂失失败！')</script>";
+        echo"<script>alert('분실 취소 실폐！관리자게 연락하시오')</script>";
         echo "<script>window.location.href='reader_guashi.php'</script>";
     }
 }

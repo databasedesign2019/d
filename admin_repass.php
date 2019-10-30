@@ -61,14 +61,24 @@ $result=mysqli_fetch_array($res);
 
 
 <h3 style="text-align: center"><?php echo $userid;  ?>호 관리자，안녕하시니까?</h3><br/>
-<h4 style="text-align: center">비밀번호 수정：</h4><br/><br/><br/><br/><br/>
+<div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
+    <div style=" text-align: center ">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">비밀번호 수정</h3>
+            </div>
+            <div class="panel-body">
+
 <form action="admin_repass.php" method="post"  style="text-align: center">
     <label><input type="password" name="pass1" placeholder="뉴 비미번호 입력하시오" class="form-control"></label><br/><br/><br/>
     <label><input type="password" name="pass2" placeholder="뉴 비밀번호 확인 하시오" class="form-control"></label><br/><br/>
     <input type="submit" value="확인" class="btn btn-default">
     <input type="reset" value="리셋"  class="btn btn-default">
 </form>
-
+            </div>
+        </div>
+    </div>
+</div>
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")

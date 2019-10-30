@@ -54,8 +54,8 @@ $sqla="select card_state from reader_card where reader_id={$userid} ;";
 
 $resa=mysqli_query($dbc,$sqla);
 $resulta=mysqli_fetch_array($resa);
-if($resulta['card_state']==0) echo "挂失<br/><br/><a href='reader_guashi_do.php?id=0' style='text-align: center'>분실 취소</a>";
-else echo "正常<br/><br/><a href='reader_guashi_do.php?id=1' style='text-align: center'>분실</a>";
+if($resulta['card_state']==0) echo "분실<br/><br/><a href='reader_guashi_do.php?id=0' style='text-align: center'>분실 취소</a>";
+else echo "정상<br/><br/><a href='reader_guashi_do.php?id=1' style='text-align: center'>분실</a>";
 
 ?>
 </h4>

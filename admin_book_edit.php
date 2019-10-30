@@ -19,8 +19,13 @@ $resultb=mysqli_fetch_array($resb);
     <title>도서관 | | 서적정보 수정</title>
 </head>
 <body>
-<h1 style="text-align: center"><strong>서적정보 수정</strong></h1>
-<div style="padding: 10px 500px 10px;">
+<div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
+    <div style="text-align: center">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">서적정보 수정</h3>
+            </div>
+            <div class="panel-body">
     <form  action="admin_book_edit.php?id=<?php echo $xgid; ?>"" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
     <div id="login">
         <div class="input-group"><span  class="input-group-addon">제목</span><input value="<?php echo $resultb['name']; ?>" name="nname" type="text" placeholder="수정한 제목 입력하시오" class="form-control"></div><br/>
@@ -39,8 +44,12 @@ $resultb=mysqli_fetch_array($resb);
         </div>
     </form>
 
-</div>
+            </div>
+            </form>
+        </div>
+    </div>
 
+</div>
 <script type="text/javascript">
     $(function(){
         $("#selector").val(<?php echo $resultb['class_id']; ?>);

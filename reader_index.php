@@ -21,7 +21,7 @@ date_default_timezone_set("PRC");
         body{
             width: 100%;
             overflow: hidden;
-            background: url("300046-106.jpg") no-repeat;
+            background: url("bg.jpg") no-repeat;
             background-size:cover;
             color: antiquewhite;
         }
@@ -33,31 +33,32 @@ date_default_timezone_set("PRC");
     </style>
 </head>
 <body>
+<body>
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#">我的图书馆</a>
+            <a class="navbar-brand" href="#">마이 도서관</a>
         </div>
         <div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="reader_index.php">主页</a></li>
-                <li><a href="reader_querybook.php">图书查询</a></li>
-                <li><a href="reader_borrow.php">我的借阅</a></li>
-                <li><a href="reader_info.php">个人信息</a></li>
-                <li><a href="reader_repass.php">密码修改</a></li>
-                <li><a href="reader_guashi.php">证件挂失</a></li>
-                <li><a href="index.php">退出</a></li>
+                <li class="active"><a href="reader_index.php">홈페이지</a></li>
+                <li><a href="reader_querybook.php">도서 조회</a></li>
+                <li ><a href="reader_borrow.php">마이 대출</a></li>
+                <li><a href="reader_info.php">개인 정보</a></li>
+                <li><a href="reader_repass.php">암호 수정</a></li>
+                <li><a href="reader_guashi.php">분실신고</a></li>
+                <li><a href="index.php">로그아웃</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<br/><br/><h3 style="text-align: center"><?php echo $result['name'];  ?>同学，您好</h3><br/>
+<br/><br/><h3 style="text-align: center"><?php echo $result['name'];  ?>님,안녕하십니까</h3><br/>
 <h4 style="text-align: center"><?php
     $sqla="select count(*) a from lend_list where reader_id={$userid} and back_date is NULL;";
 
     $resa=mysqli_query($dbc,$sqla);
     $resulta=mysqli_fetch_array($resa);
-    echo "您目前共借阅{$resulta['a']}本书。";
+    echo "당신 지금 까지 빌려한 책은 {$resulta['a']}권입니다";
     ?>
 </h4>
 <h4 style="text-align: center">
@@ -70,12 +71,12 @@ date_default_timezone_set("PRC");
         if(strtotime(date("y-m-d"))>strtotime($row['yhrq'])) $counta++;
     };
 
-    if($counta==0) echo "您当前没有超期且未归还的书。";
-    else echo "有{$counta}本书已超期，请您及时归还";
+    if($counta==0) echo "지금까지 초기한 미반납 책은 없다";
+    else echo "{$counta}권 책은 초기했습니다.실시간 반납하시오";
 
 
     ?>
-</h4>
+</h4>ㄴ
 <div id="gonggao">
     <a href="a.html" style="font-style: italic;color: white;text-decoration:replace-underline">馆内资讯：扬中华之美德 行传统毕业礼</a><br>
     <a href="a.html" style="font-style: italic;color: white">通知公告：读者借阅规则</a><br>

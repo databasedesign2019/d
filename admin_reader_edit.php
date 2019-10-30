@@ -18,8 +18,14 @@ $resultb=mysqli_fetch_array($resb);
     <title>도서관 || 사용자 정보 수정</title>
 </head>
 <body>
-<h1 style="text-align: center"><strong>사용자 정보 수정</strong></h1><br/><br/><br/>
-<div style="padding: 10px 500px 10px;">
+<div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
+    <div style="text-align: center">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">사용자 정보 수정</h3>
+            </div>
+            <div class="panel-body">
+
     <form  action="admin_reader_edit.php?id=<?php echo $readerid; ?>" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
         <div id="login">
             <div class="input-group"><span class="input-group-addon">사용자 번호</span><input name="nid" value="<?php echo $resultb['reader_id'] ;?>" type="text" placeholder="수정한 사용자 번호 입력하시오" class="form-control"></div><br/>
@@ -31,9 +37,11 @@ $resultb=mysqli_fetch_array($resb);
             <input type="submit" value="확인" class="btn btn-default">
             <input type="reset" value="리셋" class="btn btn-default">
         </div>
-    </form>
+            </div>
+            </form>
+        </div>
+    </div>
 </div>
-
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")

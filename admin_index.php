@@ -74,7 +74,7 @@ include ('mysqli_connect.php');
     ?>
 </h4>
 
-<div id="bot" style="text-align: center;font-size:20px;position:absolute;left:32%;bottom:30px "><i style="text-align: center">2019-2데이타베이스 20161795 GUJIAKAI|20174950 WENJIALI</i></div>
+<div id="bot" style="text-align: center;font-size:15px;position:absolute;left:32%;bottom:30px "><i style="text-align: center">2019-2데이타베이스 20161795 GUJIAKAI|20174950 WENJIALI|20170855 CHENWENXI</i></div>
 
 
 </body>

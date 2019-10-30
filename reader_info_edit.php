@@ -15,20 +15,26 @@ $resultb=mysqli_fetch_array($resb);
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>图书馆 || 个人信息修改</title>
+    <title>도서관||개인정보 수정</title>
 </head>
 <body>
-<h1 style="text-align: center"><strong>个人信息修改</strong></h1>
-<div style="padding: 10px 500px 10px;">
+<div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
+    <div style="text-align: center">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">개인정보 수정</h3>
+            </div>
+            <div class="panel-body">
+
     <form  action="reader_info_edit.php" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
     <div id="login">
-        <div class="input-group"><span  class="input-group-addon">姓名</span><input value="<?php echo $resultb['name']; ?>" name="name" type="text" placeholder="请输入修改的图书名" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">性别</span><input value="<?php echo $resultb['sex']; ?>" name="sex" type="text" placeholder="请输入修改的作者" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">生日</span><input value="<?php echo $resultb['birth']; ?>"  name="birth" type="text" placeholder="请输入修改的出版社" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">地址</span><input value="<?php echo $resultb['address']; ?>" name="address" type="text" placeholder="请输入修改的ISBN" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">电话</span><input  value="<?php echo $resultb['telcode']; ?>" name="telcode" type="text" placeholder="请输入新的简介" class="form-control"></div><br/>
-        <label><input type="submit" value="确认" class="btn btn-default"></label>
-        <label><input type="reset" value="重置" class="btn btn-default"></label>
+        <div class="input-group"><span class="input-group-addon">성명</span><input name="nname" value="<?php echo $resultb['name'] ;?>" type="text" placeholder="수정한 성명 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">성별</span><input name="nsex" value="<?php echo $resultb['sex'] ;?>" type="text" placeholder="수정한 성별 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">생일</span><input name="nbirth" value="<?php echo $resultb['birth'] ;?>" type="text" placeholder="수정한 생일 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">주소</span><input name="naddress" value="<?php echo $resultb['address'] ;?>" type="text" placeholder="수정한 주소 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">휴데전화</span><input name="ntel" value="<?php echo $resultb['telcode'] ;?>" type="text" placeholder="수정한 전화 입력하시오" class="form-control"></div><br/>
+        <label><input type="submit" value="확인" class="btn btn-default"></label>
+        <label><input type="reset" value="리셋" class="btn btn-default"></label>
     </div>
     </form>
 </div>
@@ -56,13 +62,13 @@ address='{$nadd}',telcode='{$nint}' where reader_id={$userid};";
     if($resa==1&&$resc==1)
     {
 
-        echo "<script>alert('修改成功！')</script>";
+        echo "<script>alert('수정 성공！')</script>";
         echo "<script>window.location.href='reader_info.php'</script>";
 
     }
     else
     {
-        echo "<script>alert('修改失败！请重新输入！');</script>";
+        echo "<script>alert('수정 실폐！다시 입력하시오！');</script>";
 
     }
 

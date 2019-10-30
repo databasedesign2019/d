@@ -5,8 +5,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_book_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_book_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_borrow_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_borrow_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_reader_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_reader_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_repass.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_repass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_guashi.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_guashi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_guashi_do.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_guashi_do.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_info_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_info_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_querybook.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_querybook.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_repass.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_repass.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +117,8 @@
       <workItem from="1572359487205" duration="3215000" />
       <workItem from="1572364681308" duration="6012000" />
       <workItem from="1572408646612" duration="4606000" />
-      <workItem from="1572417210681" duration="4314000" />
+      <workItem from="1572417210681" duration="4932000" />
+      <workItem from="1572424462377" duration="3905000" />
     </task>
     <servers />
   </component>

@@ -50,8 +50,13 @@ include ('mysqli_connect.php');
         </div>
     </div>
 </nav>
-<h1 style="text-align: center"><strong>사용자 추가</strong></h1>
-<div style="padding: 10px 500px 10px;">
+            <div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
+                <div style="text-align: center">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">사용자 추가</h3>
+                        </div>
+                        <div class="panel-body">
     <form  action="admin_reader_add.php" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
         <div id="login">
             <div class="input-group"><span class="input-group-addon">사용자 번호</span><input name="nid" type="text" placeholder="사용자 번호 입력하시오" class="form-control"></div><br/>
@@ -65,7 +70,10 @@ include ('mysqli_connect.php');
             <input type="reset" value="리셋" class="btn btn-default">
         </div>
     </form>
-</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
