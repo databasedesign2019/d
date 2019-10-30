@@ -61,7 +61,7 @@ include ('mysqli_connect.php');
 <form  id="query" action="admin_book.php" method="POST">
     <div id="query">
         <label ><input  name="bookquery" type="text" placeholder="책 제목이나 책 번호를 입력하십시오" class="form-control"></label>
-        <input type="submit" value="查询" class="btn btn-default">
+        <input type="submit" value="조회" class="btn btn-default">
     </div>
 </form>
 
