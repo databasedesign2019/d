@@ -4,7 +4,7 @@ $userid=$_SESSION['userid'];
 include ('mysqli_connect.php');
 
 $bookid=$_GET['id'];
-date_default_timezone_set("PRC");
+date_default_timezone_set("KR");
 ?>
 <!DOCTYPE html>
 <html lang="kr">

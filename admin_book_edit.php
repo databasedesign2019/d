@@ -23,17 +23,17 @@ $resultb=mysqli_fetch_array($resb);
 <div style="padding: 10px 500px 10px;">
     <form  action="admin_book_edit.php?id=<?php echo $xgid; ?>"" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
     <div id="login">
-        <div class="input-group"><span  class="input-group-addon">제목</span><input value="<?php echo $resultb['name']; ?>" name="nname" type="text" placeholder="请输入修改的图书名" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">저자</span><input value="<?php echo $resultb['author']; ?>" name="nauthor" type="text" placeholder="请输入修改的作者" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">출판사</span><input value="<?php echo $resultb['publish']; ?>"  name="npublish" type="text" placeholder="请输入修改的出版社" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">ISBN</span><input value="<?php echo $resultb['ISBN']; ?>" name="nISBN" type="text" placeholder="请输入修改的ISBN" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">소개</span><input  value="<?php echo $resultb['introduction']; ?>" name="nintroduction" type="text" placeholder="请输入新的简介" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">언어</span><input value="<?php echo $resultb['language']; ?>" name="nlanguage" type="text" placeholder="请输入修改的语言" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">가격</span><input value="<?php echo $resultb['price']; ?>" name="nprice" type="text" placeholder="请输入修改的价格" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">출반 일기</span><input value="<?php echo $resultb['pubdate']; ?>" name="npubdate" type="text" placeholder="请输入修改的出版日期" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">구분호</span><input  value="<?php echo $resultb['class_id']; ?>" name="nclass_id" type="text" placeholder="请输入修改的分类号" class="form-control"></div><br/>
-        <div class="input-group"><span  class="input-group-addon">책장호</span><input value="<?php echo $resultb['pressmark']; ?>" name="npressmark" type="text" placeholder="请输入修改的书架号" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">상태</span><input value="<?php echo $resultb['state']; ?>" name="nstate" type="text" placeholder="请输入修改的图书状态" class="form-control"></div><br/>
+        <div class="input-group"><span  class="input-group-addon">제목</span><input value="<?php echo $resultb['name']; ?>" name="nname" type="text" placeholder="수정한 제목 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span  class="input-group-addon">저자</span><input value="<?php echo $resultb['author']; ?>" name="nauthor" type="text" placeholder="수정한 저자 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span  class="input-group-addon">출판사</span><input value="<?php echo $resultb['publish']; ?>"  name="npublish" type="text" placeholder="수정한 출판사 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span  class="input-group-addon">ISBN</span><input value="<?php echo $resultb['ISBN']; ?>" name="nISBN" type="text" placeholder="새러운 ISBN 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span  class="input-group-addon">소개</span><input  value="<?php echo $resultb['introduction']; ?>" name="nintroduction" type="text" placeholder="새러운 소개 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span  class="input-group-addon">언어</span><input value="<?php echo $resultb['language']; ?>" name="nlanguage" type="text" placeholder="수정한 언어 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">가격</span><input value="<?php echo $resultb['price']; ?>" name="nprice" type="text" placeholder="수정한 가격 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span  class="input-group-addon">출반 일기</span><input value="<?php echo $resultb['pubdate']; ?>" name="npubdate" type="text" placeholder="수정한 출반 일기 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">구분호</span><input  value="<?php echo $resultb['class_id']; ?>" name="nclass_id" type="text" placeholder="수정한 구분호 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span  class="input-group-addon">책장호</span><input value="<?php echo $resultb['pressmark']; ?>" name="npressmark" type="text" placeholder="수정한 책장호 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">상태</span><input value="<?php echo $resultb['state']; ?>" name="nstate" type="text" placeholder="수정한 상태 입력하시오" class="form-control"></div><br/>
         <label><input type="submit" value="확인" class="btn btn-default"></label>
         <label><input type="reset" value="리셋" class="btn btn-default"></label>
     </div>

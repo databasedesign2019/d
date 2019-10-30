@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book_guihuan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_guihuan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book_jiechu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_jiechu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_borrow_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_borrow_info.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_reader_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_reader_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_repass.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_repass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_check.php" beforeDir="false" afterPath="$PROJECT_DIR$/login_check.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_borrow.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_borrow.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +45,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/php-7.3.11/run-tests.php" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -103,7 +114,8 @@
       <updated>1572358109769</updated>
       <workItem from="1572358112108" duration="373000" />
       <workItem from="1572359487205" duration="3215000" />
-      <workItem from="1572364681308" duration="5757000" />
+      <workItem from="1572364681308" duration="6012000" />
+      <workItem from="1572408646612" duration="3908000" />
     </task>
     <servers />
   </component>
@@ -115,7 +127,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

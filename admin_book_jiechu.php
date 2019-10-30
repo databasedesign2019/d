@@ -23,7 +23,7 @@ $bookid=$_GET['id'];
 <div style="padding: 180px 550px 10px;text-align: center">
 <form  action="admin_book_jiechu.php?tsid=<?php echo $bookid; ?>" method="POST" class="bs-example bs-example-form" role="form">
     <div id="login">
-        <div class="input-group"><span class="input-group-addon">대출자</span><input  name="borrower" type="text" placeholder="请输入借阅人读者证号" class="form-control"></div><br><br>
+        <div class="input-group"><span class="input-group-addon">대출자</span><input  name="borrower" type="text" placeholder="사용자 번호 입력하시오" class="form-control"></div><br><br>
         <input type="submit" value="대출" class="btn btn-default">
     </div>
 </form>

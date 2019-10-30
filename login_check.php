@@ -37,7 +37,7 @@ else if(mysqli_num_rows($reres)==1){
 }
 else
 {
-    echo "<script>alert('用户名或密码错误，请重新输入!');window.location='index.php'
+    echo "<script>alert('사용자 아이디 또는 암호가 잘못되었으므로 다시 입력하십시오');window.location='index.php'
    ;</script>";
 
 }

@@ -15,21 +15,21 @@ $resultb=mysqli_fetch_array($resb);
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>图书馆 || 书籍信息修改</title>
+    <title>도서관 || 사용자 정보 수정</title>
 </head>
 <body>
-<h1 style="text-align: center"><strong>读者信息修改</strong></h1><br/><br/><br/>
+<h1 style="text-align: center"><strong>사용자 정보 수정</strong></h1><br/><br/><br/>
 <div style="padding: 10px 500px 10px;">
     <form  action="admin_reader_edit.php?id=<?php echo $readerid; ?>" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
         <div id="login">
-            <div class="input-group"><span class="input-group-addon">读者证号</span><input name="nid" value="<?php echo $resultb['reader_id'] ;?>" type="text" placeholder="请输入修改的读者证号" class="form-control"></div><br/>
-            <div class="input-group"><span class="input-group-addon">姓名</span><input name="nname" value="<?php echo $resultb['name'] ;?>" type="text" placeholder="请输入修改的名字" class="form-control"></div><br/>
-            <div class="input-group"><span class="input-group-addon">性别</span><input name="nsex" value="<?php echo $resultb['sex'] ;?>" type="text" placeholder="请输入修改的性别" class="form-control"></div><br/>
-            <div class="input-group"><span class="input-group-addon">生日</span><input name="nbirth" value="<?php echo $resultb['birth'] ;?>" type="text" placeholder="请输入修改的生日" class="form-control"></div><br/>
-            <div class="input-group"><span class="input-group-addon">地址</span><input name="naddress" value="<?php echo $resultb['address'] ;?>" type="text" placeholder="请输入修改的地址" class="form-control"></div><br/>
-            <div class="input-group"><span class="input-group-addon">电话</span><input name="ntel" value="<?php echo $resultb['telcode'] ;?>" type="text" placeholder="请输入修改的电话" class="form-control"></div><br/>
-            <input type="submit" value="确认" class="btn btn-default">
-            <input type="reset" value="重置" class="btn btn-default">
+            <div class="input-group"><span class="input-group-addon">사용자 번호</span><input name="nid" value="<?php echo $resultb['reader_id'] ;?>" type="text" placeholder="수정한 사용자 번호 입력하시오" class="form-control"></div><br/>
+            <div class="input-group"><span class="input-group-addon">성명</span><input name="nname" value="<?php echo $resultb['name'] ;?>" type="text" placeholder="수정한 성명 입력하시오" class="form-control"></div><br/>
+            <div class="input-group"><span class="input-group-addon">성별</span><input name="nsex" value="<?php echo $resultb['sex'] ;?>" type="text" placeholder="수정한 성별 입력하시오" class="form-control"></div><br/>
+            <div class="input-group"><span class="input-group-addon">생일</span><input name="nbirth" value="<?php echo $resultb['birth'] ;?>" type="text" placeholder="수정한 생일 입력하시오" class="form-control"></div><br/>
+            <div class="input-group"><span class="input-group-addon">주소</span><input name="naddress" value="<?php echo $resultb['address'] ;?>" type="text" placeholder="수정한 주소 입력하시오" class="form-control"></div><br/>
+            <div class="input-group"><span class="input-group-addon">휴데전화</span><input name="ntel" value="<?php echo $resultb['telcode'] ;?>" type="text" placeholder="수정한 전화 입력하시오" class="form-control"></div><br/>
+            <input type="submit" value="확인" class="btn btn-default">
+            <input type="reset" value="리셋" class="btn btn-default">
         </div>
     </form>
 </div>
@@ -59,13 +59,13 @@ birth='{$nbir}',address='{$nadd}',telcode='{$nnte}' where reader_id=$readid;";
     if($resa==1)
     {
 
-        echo "<script>alert('修改成功！')</script>";
+        echo "<script>alert('수정 성공！')</script>";
         echo "<script>window.location.href='admin_reader.php'</script>";
 
     }
     else
     {
-        echo "<script>alert('修改失败！请重新输入！');</script>";
+        echo "<script>alert('수정 실폐！다시 입력하시오！');</script>";
 
     }
 

@@ -36,7 +36,7 @@ date_default_timezone_set("PRC");
                     <div>
                         <ul class="nav navbar-nav">
                             <li ><a href="admin_index.php">홈페이지</a></li>
-                            <li class="active" class="dropdown">
+                            <li class="dropdown" class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">서적 관리<b class="caret"></b>
                                 </a>
                                 <ul class="dropdown-menu">
@@ -53,7 +53,7 @@ date_default_timezone_set("PRC");
                                     <li><a href="admin_reader_add.php">사용자 추가</a></li>
                                 </ul>
                             </li>
-                            <li><a href="admin_borrow_info.php">대출관리</a></li>
+                            <li><li class="active"><a href="admin_borrow_info.php">대출관리</a></li>
                             <li><a href="admin_repass.php">암호 수정</a></li>
                             <li><a href="index.php">로그아웃</a></li>
             </ul>

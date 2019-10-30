@@ -11,7 +11,7 @@ $result=mysqli_fetch_array($res);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>图书馆 || 管理员密码修改</title>
+    <title>도서관 || 관리자 비밀번호 수정</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -34,7 +34,7 @@ $result=mysqli_fetch_array($res);
         <div>
             <ul class="nav navbar-nav">
                 <li ><a href="admin_index.php">홈페이지</a></li>
-                <li class="active" class="dropdown">
+                <li class="dropdown" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">서적 관리<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
@@ -52,7 +52,7 @@ $result=mysqli_fetch_array($res);
                     </ul>
                 </li>
                 <li><a href="admin_borrow_info.php">대출관리</a></li>
-                <li><a href="admin_repass.php">암호 수정</a></li>
+                <li><li class="active"><a href="admin_repass.php">암호 수정</a></li>
                 <li><a href="index.php">로그아웃</a></li>
             </ul>
         </div>
@@ -60,13 +60,13 @@ $result=mysqli_fetch_array($res);
 </nav>
 
 
-<h3 style="text-align: center"><?php echo $userid;  ?>号管理员，您好</h3><br/>
-<h4 style="text-align: center">修改您的密码：</h4><br/><br/><br/><br/><br/>
+<h3 style="text-align: center"><?php echo $userid;  ?>호 관리자，안녕하시니까?</h3><br/>
+<h4 style="text-align: center">비밀번호 수정：</h4><br/><br/><br/><br/><br/>
 <form action="admin_repass.php" method="post"  style="text-align: center">
-    <label><input type="password" name="pass1" placeholder="请输入新的密码" class="form-control"></label><br/><br/><br/>
-    <label><input type="password" name="pass2" placeholder="确认新的密码" class="form-control"></label><br/><br/>
-    <input type="submit" value="提交" class="btn btn-default">
-    <input type="reset" value="重置"  class="btn btn-default">
+    <label><input type="password" name="pass1" placeholder="뉴 비미번호 입력하시오" class="form-control"></label><br/><br/><br/>
+    <label><input type="password" name="pass2" placeholder="뉴 비밀번호 확인 하시오" class="form-control"></label><br/><br/>
+    <input type="submit" value="확인" class="btn btn-default">
+    <input type="reset" value="리셋"  class="btn btn-default">
 </form>
 
 <?php
@@ -80,13 +80,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         $res=mysqli_query($dbc,$sql);
         if($res==1)
         {
-            echo "<script>alert('密码修改成功！请重新登陆！')</script>";
+            echo "<script>alert('수정 성공！다시 로그인하시오！')</script>";
             echo "<script>window.location.href='index.php'</script>";
         }
 
     }
     else{
-        echo "<script>alert('两次输入密码不同，请重新输入！')</script>";
+        echo "<script>alert('두번 입력한 비밀번호 다른다，다시 입력하시오！')</script>";
 
     }
 
