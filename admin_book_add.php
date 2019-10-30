@@ -16,11 +16,9 @@ include ('mysqli_connect.php');
 </head>
 <style>
     body{
-        width: 1600px;
-        overflow: hidden;
+        width: 100%;
         background-repeat: repeat;
         background-image: url("bg.jpg");
-        height: 855px;
         background-size:cover;
         color: antiquewhite;
     }
@@ -59,15 +57,14 @@ include ('mysqli_connect.php');
         </div>
     </div>
 </nav>
+
 <div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
     <div style="text-align: center">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h3 class="panel-title">서적 층가</h3>
+                <h3 class="panel-title">서적 증가</h3>
             </div>
             <div class="panel-body">
-                <form  action="login_check.php" method="POST" class="bs-example bs-example-form" role="form">
-                    <div id="login">
                         <form  action="admin_book_add.php" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
                             <div id="login">
                                 <div class="input-group"><span class="input-group-addon">제목</span><input name="nname" type="text" placeholder="제목 입력하시오" class="form-control"></div><br/>
