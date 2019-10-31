@@ -43,6 +43,7 @@ $resultb=mysqli_fetch_array($resb);
         <div class="input-group"><span class="input-group-addon">생일</span><input name="nbirth" value="<?php echo $resultb['birth'] ;?>" type="text" placeholder="수정한 생일 입력하시오" class="form-control"></div><br/>
         <div class="input-group"><span class="input-group-addon">주소</span><input name="naddress" value="<?php echo $resultb['address'] ;?>" type="text" placeholder="수정한 주소 입력하시오" class="form-control"></div><br/>
         <div class="input-group"><span class="input-group-addon">휴데전화</span><input name="ntel" value="<?php echo $resultb['telcode'] ;?>" type="text" placeholder="수정한 전화 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">이메일</span><input name="nmail" value="<?php echo $resultb['email'] ;?>" type="text" placeholder="수정한 이메일 입력하시오" class="form-control"></div><br/>
         <label><input type="submit" value="확인" class="btn btn-default"></label>
         <label><input type="reset" value="리셋" class="btn btn-default"></label>
     </div>
@@ -59,12 +60,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $nbirth = $_POST["birth"];
     $nadd = $_POST["address"];
     $nint = $_POST["telcode"];
-
+    $nmail = $_POST["email"];
 
 
 
     $sqla="update reader_info set name='{$nnam}',sex='{$nsex}',birth='{$nbirth}',
-address='{$nadd}',telcode='{$nint}' where reader_id={$userid};";
+address='{$nadd}',telcode='{$nint}',email='{$nmail}' where reader_id={$userid};";
     $resa=mysqli_query($dbc,$sqla);
 
     $sqlc="update reader_card set name='{$nnam}' where reader_id={$userid};";

@@ -66,6 +66,7 @@ $result=mysqli_fetch_array($res);
         <a href="#" class="list-group-item"><?php echo "<p>생일:{$resulta['birth']}</p><br/>";  ?></a>
         <a href="#" class="list-group-item"><?php     echo "<p>주소:{$resulta['address']}</p><br/>";  ?></a>
         <a href="#" class="list-group-item"><?php    echo "<p>전화:{$resulta['telcode']}</p><br/>"; ?></a>
+        <a href="#" class="list-group-item"><?php    echo "<p>이메일:{$resulta['email']}</p><br/>"; ?></a>
         <?php echo "<a style='color: #AA0000;font-size: larger' href='reader_info_edit.php'><strong>수정하기</strong></a>"; ?>
     </div>
 </div>

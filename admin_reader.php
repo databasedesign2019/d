@@ -76,9 +76,10 @@ include ('mysqli_connect.php');
         <th>성명</th>
         <th>성별</th>
         <th>생일</th>
-        <th>거주지</th>
-        <th>전화</th>
-        <th>독자 상태</th>
+        <th>주소</th>
+        <th>휴데전화</th>
+        <th>이메일</th>
+        <th>사용자 상태</th>
         <th>조작</th>
         <th>조작</th>
     </tr>
@@ -90,11 +91,11 @@ include ('mysqli_connect.php');
     {
         $gjc = $_POST["readerquery"];
 
-        $sql="select reader_info.reader_id, reader_info.name,sex,birth,address,telcode,card_state from reader_info,reader_card where reader_info.reader_id=reader_card.reader_id and (name like '%{$gjc}%' or reader_id like '%{$gjc}%') ;";
+        $sql="select reader_info.reader_id, reader_info.name,sex,birth,address,telcode,card_state,email from reader_info,reader_card where reader_info.reader_id=reader_card.reader_id and (name like '%{$gjc}%' or reader_id like '%{$gjc}%') ;";
 
     }
     else{
-        $sql="select reader_info.reader_id, reader_info.name, sex, birth, address, telcode, card_state
+        $sql="select reader_info.reader_id, reader_info.name, sex, birth, address, telcode, card_state,email
 from reader_info, reader_card where reader_info.reader_id = reader_card.reader_id";
     }
 
@@ -108,6 +109,7 @@ from reader_info, reader_card where reader_info.reader_id = reader_card.reader_i
         echo "<td>{$row['birth']}</td>";
         echo "<td>{$row['address']}</td>";
         echo "<td>{$row['telcode']}</td>";
+        echo "<td>{$row['email']}</td>";
         if($row['card_state']==1) echo "<td>정상</td>"; else echo "<td>분실중</td>";
         echo "<td><a href='admin_reader_edit.php?id={$row['reader_id']}'>수정</a></td>";
         echo "<td><a href='admin_reader_del.php?id={$row['reader_id']}'>삭제</a></td>";

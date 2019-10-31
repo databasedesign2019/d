@@ -81,7 +81,7 @@ include ('mysqli_connect.php');
             <div class="input-group"><span class="input-group-addon">생일</span><input name="nbirth" type="text" placeholder="생일 입력하시오" class="form-control"></div><br/>
             <div class="input-group"><span class="input-group-addon">주소</span><input name="naddress" type="text" placeholder="주소 입력하시오" class="form-control"></div><br/>
             <div class="input-group"><span class="input-group-addon">휴데전화</span><input name="ntel" type="text" placeholder="전화 입력하시오" class="form-control"></div><br/>
-
+            <div class="input-group"><span class="input-group-addon">이메일</span><input name="nmail" type="text" placeholder="이메일 입력하시오" class="form-control"></div><br/>
             <input type="submit" value="추가" class="btn btn-default">
             <input type="reset" value="리셋" class="btn btn-default">
         </div>
@@ -100,9 +100,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $nbir= $_POST["nbirth"];
     $nadd= $_POST["naddress"];
     $nnte = $_POST["ntel"];
+    $mail = $_POST["nmail"];
 
-
-    $sqla="insert into reader_info VALUES ($nnid ,'{$nnam}','{$nsex}','{$nbir}','{$nadd}','{$nnte}')";
+    $sqla="insert into reader_info VALUES ($nnid ,'{$nnam}','{$nsex}','{$nbir}','{$nadd}','{$nnte}','{$mail}')";
     $sqlb="insert into reader_card (reader_id,name) VALUES($nnid ,'{$nnam}');";
     $resa=mysqli_query($dbc,$sqla);
     $resb=mysqli_query($dbc,$sqlb);

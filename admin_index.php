@@ -1,6 +1,7 @@
 <?php
 session_start();
 $userid=$_SESSION['userid'];
+
 include ('mysqli_connect.php');
 ?>
 
@@ -63,7 +64,7 @@ include ('mysqli_connect.php');
 </nav>
 
 
-<h3 style="text-align: center"><?php echo $userid;  ?>호 관리자님，안녕하시니까?</h3><br/><br/><br/>
+<h3 style="text-align: center"><?php echo $userid;  ?> 호 관리자님，안녕하시니까?</h3><br/><br/><br/>
 <h4 style="text-align: center"><?php
     $sql="select count(*) a from book_info;";
     $res=mysqli_query($dbc,$sql);

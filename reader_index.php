@@ -55,8 +55,8 @@ date_default_timezone_set("KR");
 </nav>
 
 </h4>
-<div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
-    <br/><br/><h3 style="text-align: center"><?php echo $result['name'];  ?>님,안녕하십니까?</h3><br/>
+
+    <br/><br/><h3 style="text-align: center"><?php echo $result['name'];  ?> 님,안녕하십니까?</h3><br/>
     <h4 style="text-align: center"><?php
         $sqla="select count(*) a from lend_list where reader_id={$userid} and back_date is NULL;";
 
@@ -79,9 +79,10 @@ date_default_timezone_set("KR");
         else echo "{$counta}권 책은 초기했습니다.실시간 반납하시오";
 
 
-        ?>
-<h3 style="text-align: center">공지 상황</h3>
-    <table  width='100%' class="table table-hover">
+        ?></h4>
+        <hr>
+        <h3 style="text-align: center">공지 상황</h3>
+    <table  width='80%' class="table">
 
         <tr>
             <th>번호</th>
@@ -114,7 +115,7 @@ date_default_timezone_set("KR");
 
 
     </table>
-</div>
+
 </body>
 </body>
 </body>
