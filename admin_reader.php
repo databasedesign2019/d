@@ -109,7 +109,7 @@ from reader_info, reader_card where reader_info.reader_id = reader_card.reader_i
         echo "<td>{$row['birth']}</td>";
         echo "<td>{$row['address']}</td>";
         echo "<td>{$row['telcode']}</td>";
-        echo "<td>{$row['email']}</td>";
+        echo "<td><a href=\"mailto:{$row['email']}\">{$row['email']}</a></td>";
         if($row['card_state']==1) echo "<td>정상</td>"; else echo "<td>분실중</td>";
         echo "<td><a href='admin_reader_edit.php?id={$row['reader_id']}'>수정</a></td>";
         echo "<td><a href='admin_reader_del.php?id={$row['reader_id']}'>삭제</a></td>";
