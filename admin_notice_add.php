@@ -77,7 +77,7 @@ include ('mysqli_connect.php');
                                 <div class="input-group"><span class="input-group-addon">제목</span><input name="nname" type="text" placeholder="제목 입력하시오" class="form-control"></div><br/>
                                 <div class="input-group"><span class="input-group-addon">시간</span><input name="ntime" type="text" value="<?php echo $showtime=date("Y-m-d H:i:s");?>" class="form-control"></div><br/>
                                 <div class="input-group"><span class="input-group-addon">내용</span><input name="ncontent" type="text" placeholder="내용 입력하시오" class="form-control"></div><br/>
-                                <div class="input-group"><span class="input-group-addon">구분<select id="box" select name="nclass"><option value="1">공지</option><option value="2">광고</option><option value="3">추천</option><option value="4">뉴스</option></select></span> </div><br/>
+                                <div class="input-group"><span class="input-group-addon">구분<select id="box" select name="nclass"><option value="1">공지</option><option value="2">광고</option><option value="3">이벤트</option><option value="4">뉴스</option></select></span> </div><br/>
 
                                 <label><input type="submit" value="추가" class="btn btn-default"></label>
                                 <label><input type="reset" value="리셋" class="btn btn-default"></label>

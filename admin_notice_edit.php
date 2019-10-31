@@ -42,7 +42,7 @@ $resultb=mysqli_fetch_array($resb);
         <div class="input-group"><span class="input-group-addon">제목</span><input name="nname" type="text" value="<?php echo $resultb['title']; ?>" class="form-control"></div><br/>
         <div class="input-group"><span class="input-group-addon">시간</span><input name="ntime" type="text" value="<?php echo $resultb['time']; ?>" class="form-control"></div><br/>
         <div class="input-group"><span class="input-group-addon">내용</span><input name="ncontent" type="text"value="<?php echo $resultb['content']; ?>" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">구분<select id="box3" select name="nclass"><option value="1">공지</option><option value="2">광고</option><option value="3">추천</option><option value="4">뉴스</option></select></span> </div><br/>
+        <div class="input-group"><span class="input-group-addon">구분<select id="box3" select name="nclass"><option value="1">공지</option><option value="2">광고</option><option value="3">이벤트</option><option value="4">뉴스</option></select></span> </div><br/>
         <label><input type="submit" value="확인" class="btn btn-default"></label>
         <label><input type="reset" value="리셋" class="btn btn-default"></label>
         </div>
