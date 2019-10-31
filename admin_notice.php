@@ -66,11 +66,7 @@ include ('mysqli_connect.php');
     </div>
 </nav>
 <h1 style="text-align: center"><strong>모든 공지</strong></h1>
-<form  id="query" action="admin_notice.php" method="POST">
-    <div id="query">
-        <label ><input  name="bookquery" type="text" placeholder="공지 제목이나  번호를 입력하십시오" class="form-control"></label>
-        <input type="submit" value="조회" class="btn btn-default">
-    </div>
+
 </form>
 
 <table  width='100%' class="table table-hover">
@@ -88,9 +84,9 @@ include ('mysqli_connect.php');
 
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-    $gjc = $_POST["bookquery"];
+    $gjc = $_POST["noticequery"];
 
-        $sql="select noid,title,time,content,nc_id,nc_name from notice,notice_class where notice.nc_id=notice_class.nc_id and ( title like '%{$gjc}%' or noid like '%{$gjc}%')  ;";
+        $sql="select noid,title,time,content,notice.nc_id,nc_name  from  notice,notice_class where notice.nc_id=notice_class.nc_id ; and ( title like '%{$gjc}%' or notice.nc_id like '%{$gjc}%')  ;";
 
     }
     else{
