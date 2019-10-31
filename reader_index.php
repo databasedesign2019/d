@@ -53,7 +53,7 @@ date_default_timezone_set("KR");
         </div>
     </div>
 </nav>
-<br/><br/><h3 style="text-align: center"><?php echo $result['name'];  ?>님,안녕하십니까</h3><br/>
+<br/><br/><h3 style="text-align: center"><?php echo $result['name'];  ?>님,안녕하십니까?</h3><br/>
 <h4 style="text-align: center"><?php
     $sqla="select count(*) a from lend_list where reader_id={$userid} and back_date is NULL;";
 
