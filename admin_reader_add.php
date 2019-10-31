@@ -39,9 +39,15 @@ include ('mysqli_connect.php');
                     <ul class="dropdown-menu">
                         <li><a href="admin_book.php">모든 서적</a></li>
                         <li><a href="admin_book_add.php">서적 증가</a></li>
-
                     </ul>
                 </li>
+                <li class="dropdown" >
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">공지 관리<b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="admin_notice.php">모든 공지</a></li>
+                        <li><a href="admin_notice_add.php">공지 추가</a></li>
+                    </ul>
                 <li class="active" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
                     </a>
