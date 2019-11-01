@@ -47,6 +47,7 @@ date_default_timezone_set("KR");
                 <li ><a href="reader_borrow.php">마이 대출</a></li>
                 <li><a href="reader_info.php">개인 정보</a></li>
                 <li><a href="reader_repass.php">암호 수정</a></li>
+                <li><a href="reader_qna.php">문의하기</a></li>
                 <li><a href="reader_guashi.php">분실신고</a></li>
                 <li><a href="index.php">로그아웃</a></li>
             </ul>

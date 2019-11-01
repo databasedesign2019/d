@@ -49,6 +49,7 @@ $result=mysqli_fetch_array($res);
                         <li><a href="admin_notice.php">모든 공지</a></li>
                         <li><a href="admin_notice_add.php">공지 추가</a></li>
                     </ul>
+                <li  ><a href="admin_qna.php">질문 관리</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
                     </a>
@@ -64,8 +65,6 @@ $result=mysqli_fetch_array($res);
         </div>
     </div>
 </nav>
-
-
 <h3 style="text-align: center"><?php echo $userid;  ?>호 관리자，안녕하시니까?</h3><br/>
 <div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
     <div style=" text-align: center ">

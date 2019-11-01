@@ -48,6 +48,7 @@ date_default_timezone_set("PRC");
                         <li><a href="admin_notice.php">모든 공지</a></li>
                         <li><a href="admin_notice_add.php">공지 추가</a></li>
                     </ul>
+                <li  ><a href="admin_qna.php">질문 관리</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
                     </a>

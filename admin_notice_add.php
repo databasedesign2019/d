@@ -47,6 +47,7 @@ include ('mysqli_connect.php');
                         <li><a href="admin_notice.php">모든 공지</a></li>
                         <li><a href="admin_notice_add.php">공지 추가</a></li>
                     </ul>
+                <li  ><a href="admin_qna.php">질문 관리</a></li>
                 </li>
                 </li>
                 <li class="dropdown">

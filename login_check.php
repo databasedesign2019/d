@@ -9,19 +9,14 @@
 </html>
 <?php
 include ('mysqli_connect.php');
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $acco = $_POST["account"];
     $pw = $_POST["pass"];
 }
 $adsql="select * from admin where admin_id={$acco} and password='{$pw}'";
 $adres=mysqli_query($dbc,$adsql);
-
-
 $resql="select * from reader_card where reader_id={$acco} and passwd='{$pw}'";
 $reres=mysqli_query($dbc,$resql);
-
-
 if(mysqli_num_rows($adres)==1 ){
     session_start();
     $_SESSION['userid']=$acco;
@@ -32,7 +27,6 @@ else if(mysqli_num_rows($reres)==1){
 
     session_start();
     $_SESSION['userid']=$acco;
-
     echo "<script>window.location='reader_index.php'</script>";
 }
 else

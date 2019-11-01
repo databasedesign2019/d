@@ -48,6 +48,7 @@ include ('mysqli_connect.php');
                         <li><a href="admin_notice.php">모든 공지</a></li>
                         <li><a href="admin_notice_add.php">공지 추가</a></li>
                     </ul>
+                <li  ><a href="admin_qna.php">질문 관리</a></li>
                 <li class="active" class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
                     </a>
@@ -91,7 +92,6 @@ include ('mysqli_connect.php');
                 </div>
                 </div>
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
     $nnid = $_POST["nid"];
@@ -101,29 +101,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $nadd= $_POST["naddress"];
     $nnte = $_POST["ntel"];
     $mail = $_POST["nmail"];
-
     $sqla="insert into reader_info VALUES ($nnid ,'{$nnam}','{$nsex}','{$nbir}','{$nadd}','{$nnte}','{$mail}')";
     $sqlb="insert into reader_card (reader_id,name) VALUES($nnid ,'{$nnam}');";
     $resa=mysqli_query($dbc,$sqla);
     $resb=mysqli_query($dbc,$sqlb);
-
-
     if($resa==1&&$resb==1)
     {
-
         echo "<script>alert('사용자 추가 성공! 초기 암호 111111')</script>";
         echo "<script>window.location.href='admin_reader.php'</script>";
-
     }
     else
     {
         echo "<script>alert('추가 실패! 다시 입력하십시오!');</script>";
-
     }
-
 }
-
-
 ?>
 </body>
 </html>

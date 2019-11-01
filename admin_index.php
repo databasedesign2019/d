@@ -47,6 +47,7 @@ include ('mysqli_connect.php');
                         <li><a href="admin_notice.php">모든 공지</a></li>
                         <li><a href="admin_notice_add.php">공지 추가</a></li>
                     </ul>
+                <li  ><a href="admin_qna.php">질문 관리</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
                     </a>
@@ -88,6 +89,19 @@ include ('mysqli_connect.php');
     echo "발표된 공지상황은 {$result['a']}개 보유";
     ?>
 </h4>
+<h4 style="text-align: center"><?php
+    $sql="select count(*) a from qna;";
+    $res=mysqli_query($dbc,$sql);
+    $result=mysqli_fetch_array($res);
+    echo "지금 문의는 {$result['a']}개 보유";
+    ?>
+</h4>
+<h5 style="text-align: center;color: brown"><?php
+$sql="select count(*) b from qna where admin_id=0001;";
+$res=mysqli_query($dbc,$sql);
+$result=mysqli_fetch_array($res);
+echo "미처리 문의는 {$result['b']}개 보유"; ?></h5>
+
 <div id="bot" style="text-align: center;font-size:15px;position:absolute;left:32%;bottom:30px "><i style="text-align: center">2019-2데이타베이스 20161795 GUJIAKAI|20174950 WENJIALI|20170855 CHENWENXI</i></div>
 
 

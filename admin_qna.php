@@ -9,7 +9,7 @@ include ('mysqli_connect.php');
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>도서관 ||공지 관리</title>
+    <title>도서관 ||질문 관리</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -42,14 +42,15 @@ include ('mysqli_connect.php');
 
                     </ul>
                 </li>
-                <li class="active" class="dropdown" >
+                <li  class="dropdown" >
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">공지 관리<b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="admin_notice.php">모든 공지</a></li>
                         <li><a href="admin_notice_add.php">공지 추가</a></li>
+
                     </ul>
-                <li  ><a href="admin_qna.php">질문 관리</a></li>
+                <li class="active" ><a href="admin_qna.php">질문 관리</a></li>
                 </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">사용자 관리<b class="caret"></b>
@@ -66,18 +67,24 @@ include ('mysqli_connect.php');
         </div>
     </div>
 </nav>
-<h1 style="text-align: center"><strong>모든 공지</strong></h1>
-
+<h1 style="text-align: center"><strong>모든 질문</strong></h1>
+<form  id="query" action="admin_qna.php" method="POST">
+    <div id="query">
+        <label ><input  name="qnaquery" type="text" value="0001" class="form-control" style="background-color: #e4e4e4" readonly ></label>
+        <input type="submit" value="미처리문의조회" class="btn btn-default">
+    </div>
+</form>
 </form>
 
 <table  width='100%' class="table table-hover">
     <tr>
         <th>번호</th>
+        <th>질문자</th>
         <th>제목</th>
         <th>시간</th>
-        <th>내용</th>
-        <th>구분호</th>
-        <th>구분</th>
+        <th>질문</th>
+        <th>대답</th>
+        <th>대답자</th>
         <th>조작</th>
         <th>조작</th>
     </tr>
@@ -85,27 +92,28 @@ include ('mysqli_connect.php');
 
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-    $gjc = $_POST["noticequery"];
+    $gjc = $_POST["qnaquery"];
 
-        $sql="select noid,title,time,content,notice.nc_id,nc_name  from  notice,notice_class where notice.nc_id=notice_class.nc_id ; and ( title like '%{$gjc}%' or notice.nc_id like '%{$gjc}%')  ;";
+        $sql="select qna_id,title,push_time,question,answer,name,admin_name  from  reader_info,qna,admin where qna.reader_id=reader_info.reader_id and qna.admin_id=admin.admin_id and ( admin_name like '%{$gjc}%' or qna.admin_id like '%{$gjc}%')  ;";
 
     }
     else{
-        $sql="select noid,title,time,content,notice.nc_id,nc_name  from  notice,notice_class where notice.nc_id=notice_class.nc_id ;";
+        $sql="select qna_id,title,push_time,question,answer,name,admin_name  from  reader_info,qna,admin where qna.reader_id=reader_info.reader_id and qna.admin_id=admin.admin_id ;";
     }
 
 
     $res=mysqli_query($dbc,$sql);
     foreach ($res as $row){
         echo "<tr>";
-        echo "<td>{$row['noid']}</td>";
+        echo "<td>{$row['qna_id']}</td>";
+        echo "<td>{$row['name']}</td>";
         echo "<td>{$row['title']}</td>";
-        echo "<td>{$row['time']}</td>";
-        echo "<td>{$row['content']}</td>";
-        echo "<td>{$row['nc_id']}</td>";
-        echo "<td>{$row['nc_name']}</td>";
-        echo "<td><a href='admin_notice_edit.php?id={$row['noid']}'>수정</a></td>";
-        echo "<td><a href='admin_notice_del.php?id={$row['noid']}'>삭제</a></td>";
+        echo "<td>{$row['push_time']}</td>";
+        echo "<td>{$row['question']}</td>";
+        echo "<td>{$row['answer']}</td>";
+        echo "<td>{$row['admin_name']}</td>";
+        echo "<td><a href='admin_qna_edit.php?id={$row['qna_id']}'>대답</a></td>";
+        echo "<td><a href='admin_qna_del.php?id={$row['qna_id']}'>삭제</a></td>";
         echo "</tr>";
     };
     ?>

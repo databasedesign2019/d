@@ -25,7 +25,6 @@ $resultb=mysqli_fetch_array($resb);
         background-size:cover;
         color: antiquewhite;
     }
-
 </style>
 <body>
 <div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
@@ -54,12 +53,10 @@ $resultb=mysqli_fetch_array($resb);
     </div>
 </div>
 <?php
-
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
 
     $readid=$_GET['id'];
-
     $nnid = $_POST["nid"];
     $nnam= $_POST["nname"];
     $nsex = $_POST["nsex"];
@@ -67,30 +64,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     $nadd= $_POST["naddress"];
     $nnte = $_POST["ntel"];
     $mail = $_POST["nmail"];
-
-
     $sqla="update reader_info set reader_id={$nnid},name='{$nnam}',sex='{$nsex}',
 birth='{$nbir}',address='{$nadd}',telcode='{$nnte}',email='{$mail}' where reader_id=$readid;";
     $resa=mysqli_query($dbc,$sqla);
     $sqlc="update reader_card set name='{$nnam}' where reader_id=$readid;";
     $resc=mysqli_query($dbc,$sqlc);
-
     if($resa==1)
     {
-
         echo "<script>alert('수정 성공！')</script>";
         echo "<script>window.location.href='admin_reader.php'</script>";
-
     }
     else
     {
         echo "<script>alert('수정 실폐！다시 입력하시오！');</script>";
-
     }
-
 }
-
-
 ?>
 </body>
 </html>

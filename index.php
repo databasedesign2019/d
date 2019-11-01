@@ -44,8 +44,6 @@ if(isset($_SESSION['userid']))
         </div>
     </div>
 </div>
-
-
         </div>
     </form>
 </div>
