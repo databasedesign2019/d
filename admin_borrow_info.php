@@ -2,7 +2,7 @@
 session_start();
 $userid=$_SESSION['userid'];
 include ('mysqli_connect.php');
-date_default_timezone_set("PRC");
+date_default_timezone_set("Asia/Seoul");
 ?>
 
 <!DOCTYPE html>

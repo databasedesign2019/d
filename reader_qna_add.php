@@ -3,7 +3,6 @@ session_start();
 $userid=$_SESSION['userid'];
 include ('mysqli_connect.php');
 $readerid=$_GET['id']
-
 ?>
 <!DOCTYPE html>
 <html lang="en">

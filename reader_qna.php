@@ -2,7 +2,6 @@
 session_start();
 $userid=$_SESSION['userid'];
 include ('mysqli_connect.php');
-
 ?>
 
 <!DOCTYPE html>

@@ -18,7 +18,11 @@ date_default_timezone_set("KR");
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        body{
+        a:link{text-decoration: none;color: gray}
+        a:active{text-decoration:blink}
+        a:hover{text-decoration:underline;color: red}
+        a:visited{text-decoration: none;color: yellow}
+    body{
             width: 100%;
             overflow: hidden;
             background-repeat: repeat;
