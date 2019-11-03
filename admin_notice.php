@@ -75,10 +75,8 @@ include ('mysqli_connect.php');
         <th>번호</th>
         <th>제목</th>
         <th>시간</th>
-        <th>내용</th>
         <th>구분호</th>
         <th>구분</th>
-        <th>조작</th>
         <th>조작</th>
     </tr>
     <?php
@@ -99,13 +97,11 @@ include ('mysqli_connect.php');
     foreach ($res as $row){
         echo "<tr>";
         echo "<td>{$row['noid']}</td>";
-        echo "<td>{$row['title']}</td>";
+        echo "<td><a target='_top' href='admin_notice_read.php?id={$row['noid']}'>{$row['title']}</a></td>";
         echo "<td>{$row['time']}</td>";
-        echo "<td>{$row['content']}</td>";
         echo "<td>{$row['nc_id']}</td>";
         echo "<td>{$row['nc_name']}</td>";
-        echo "<td><a href='admin_notice_edit.php?id={$row['noid']}'>수정</a></td>";
-        echo "<td><a href='admin_notice_del.php?id={$row['noid']}'>삭제</a></td>";
+        echo "<td><a href='admin_notice_del.php?id={$row['noid']}'><img src='image/delete.png'></a></td>";
         echo "</tr>";
     };
     ?>

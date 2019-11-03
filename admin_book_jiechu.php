@@ -57,7 +57,7 @@ $bookid=$_GET['id'];
         $resultc=mysqli_fetch_array($resc);
         if($resultc['card_state']==1){
 
-            $sqla="insert into lend_list(book_id,reader_id,lend_date) values ({$jctsid},{$reid},NOW());";
+            $sqla="insert into lend_list(book_id,reader_id,lend_date,borrow) values ({$jctsid},{$reid},NOW(),0);";
             $sqlb="UPDATE book_info set state=0 where book_id={$jctsid};";
             $resa=mysqli_query($dbc,$sqla);
             $resb=mysqli_query($dbc,$sqlb);

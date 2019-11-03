@@ -84,8 +84,8 @@ include ('mysqli_connect.php');
         <th>질문</th>
         <th>대답</th>
         <th>대답자</th>
-        <th>조작</th>
-        <th>조작</th>
+        <th>대답</th>
+        <th>사젝</th>
     </tr>
     <?php
 
@@ -111,8 +111,8 @@ include ('mysqli_connect.php');
         echo "<td>{$row['question']}</td>";
         echo "<td>{$row['answer']}</td>";
         echo "<td>{$row['admin_name']}</td>";
-        echo "<td><a href='admin_qna_edit.php?id={$row['qna_id']}'>대답</a></td>";
-        echo "<td><a href='admin_qna_del.php?id={$row['qna_id']}'>삭제</a></td>";
+        echo "<td><a href='admin_qna_edit.php?id={$row['qna_id']}'><img src='image/huida.png'></a></td>";
+        echo "<td><a href='admin_qna_del.php?id={$row['qna_id']}'><img src='image/delete.png'></a></td>";
         echo "</tr>";
     };
     ?>

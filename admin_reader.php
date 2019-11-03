@@ -111,9 +111,9 @@ from reader_info, reader_card where reader_info.reader_id = reader_card.reader_i
         echo "<td>{$row['address']}</td>";
         echo "<td>{$row['telcode']}</td>";
         echo "<td><a href=\"mailto:{$row['email']}\">{$row['email']}</a></td>";
-        if($row['card_state']==1) echo "<td>정상</td>"; else echo "<td>분실중</td>";
-        echo "<td><a href='admin_reader_edit.php?id={$row['reader_id']}'>수정</a></td>";
-        echo "<td><a href='admin_reader_del.php?id={$row['reader_id']}'>삭제</a></td>";
+        if($row['card_state']==1) echo "<td><img src='image/zheng-smaill.png'></td>"; else echo "<td><img src='image/normal-small.png'></td>";
+        echo "<td><a href='admin_reader_edit.php?id={$row['reader_id']}'><img src='image/xiugai.png'></a></td>";
+        echo "<td><a href='admin_reader_del.php?id={$row['reader_id']}'><img src='image/delete.png'></a></td>";
         echo "</tr>";
     };
     ?>

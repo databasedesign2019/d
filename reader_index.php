@@ -6,7 +6,8 @@ include ('mysqli_connect.php');
 $sql="select name from reader_card where reader_id={$userid}";
 $res=mysqli_query($dbc,$sql);
 $result=mysqli_fetch_array($res);
-date_default_timezone_set("KR");
+
+date_default_timezone_set("Asia/Seoul");
 ?>
 
 <!DOCTYPE html>
@@ -18,13 +19,13 @@ date_default_timezone_set("KR");
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        a:link{text-decoration: none;color: gray}
+        a:link{text-decoration: none;color: black}
         a:active{text-decoration:blink}
         a:hover{text-decoration:underline;color: red}
-        a:visited{text-decoration: none;color: yellow}
+        a:visited{text-decoration: none;color: darkslateblue}
     body{
             width: 100%;
-            overflow: hidden;
+        overflow: auto;
             background-repeat: repeat;
             background-image: url("bg.jpg");
             background-size:cover;
@@ -32,7 +33,7 @@ date_default_timezone_set("KR");
         }
         #gonggao{
             position: absolute;
-            left: 50%;
+            left: 30%;
             top: 50%;
         }
     </style>
@@ -47,7 +48,7 @@ date_default_timezone_set("KR");
         <div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="reader_index.php">홈페이지</a></li>
-                <li><a href="../reader_querybook.php">도서 조회</a></li>
+                <li><a href="reader_querybook.php">도서 조회</a></li>
                 <li ><a href="reader_borrow.php">마이 대출</a></li>
                 <li><a href="reader_info.php">개인 정보</a></li>
                 <li><a href="reader_repass.php">암호 수정</a></li>
@@ -85,43 +86,37 @@ date_default_timezone_set("KR");
 
 
         ?></h4>
-        <hr>
-        <h3 style="text-align: center">공지 상황</h3>
-    <table  width='80%' class="table">
-
-        <tr>
-            <th>번호</th>
-            <th>제목</th>
-            <th>시간</th>
-            <th>내용</th>
-            <th>구분</th>
-        </tr>
-        <?php
-
-        if ($_SERVER["REQUEST_METHOD"] == "POST")
-        {
-            $sql="select noid,title,time,content,nc_id,nc_name from notice,notice_class where notice.nc_id=notice_class.nc_id  ;";
-        }
-        else{
-            $sql="select noid,title,time,content,notice.nc_id,nc_name  from  notice,notice_class where notice.nc_id=notice_class.nc_id ;";
-        }
-
-        $res=mysqli_query($dbc,$sql);
-        foreach ($res as $row){
-            echo "<tr>";
-            echo "<td>{$row['noid']}</td>";
-            echo "<td>{$row['title']}</td>";
-            echo "<td>{$row['time']}</td>";
-            echo "<td>{$row['content']}</td>";
-            echo "<td>{$row['nc_name']}</td>";
-            echo "</tr>";
-        };
-        ?>
 
 
-    </table>
+
+<div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
+    <div style="text-align: center">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">공지상황</h3>
+            </div>
+            <div class="panel-body">
+    <?php
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        $sql="select noid,title,time,content,nc_id,nc_name from notice,notice_class where notice.nc_id=notice_class.nc_id  ;";
+    }
+    else{
+        $sql="select noid,title,time,content,notice.nc_id,nc_name  from  notice,notice_class where notice.nc_id=notice_class.nc_id ;";
+    }
+
+    $res=mysqli_query($dbc,$sql);
+    foreach ($res as $row){
+        echo "<td><a target='_top' href='notice_read.php?id={$row['noid']}'>{$row['title']} {$row['time']} {$row['nc_name']} </a></td></br>";
+    };
+    ?>
+</div>
+        </div>
+    </div>
+</div>
 
 </body>
-</body>
-</body>
+
+
 </html>

@@ -37,8 +37,8 @@ if(isset($_SESSION['userid']))
         <div class="panel-body">
             <form  action="login_check.php" method="POST" class="bs-example bs-example-form" role="form">
                 <div id="login">
-                    <div class="input-group"><span class="input-group-addon">아이디</span><input  name="account" type="text" placeholder="사용자 아이디\아이디  입력" class="form-control"></div><br><br>
-                    <div class="input-group"><span class="input-group-addon">비밀번호</span><input  name="pass" type="password" placeholder="비밀번호 입력" class="form-control"></div><br><br><br>
+                    <div class="input-group"><span class="input-group-addon"><img src="image/yonghu.png">  아이디</span><input  name="account" type="text" placeholder="사용자 아이디\아이디  입력" class="form-control"></div><br><br>
+                    <div class="input-group"><span class="input-group-addon"><img src="image/mima.png">  비밀번호</span><input  name="pass" type="password" placeholder="비밀번호 입력" class="form-control"></div><br><br><br>
                     <input type="submit" value="로그인" class="btn btn-default">
                     <input type="reset" value="리셋" class="btn btn-default">
         </div>

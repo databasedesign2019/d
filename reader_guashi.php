@@ -57,8 +57,8 @@ $sqla="select card_state from reader_card where reader_id={$userid} ;";
 
 $resa=mysqli_query($dbc,$sqla);
 $resulta=mysqli_fetch_array($resa);
-if($resulta['card_state']==0) echo "분실중<br/><br/><a href='reader_guashi_do.php?id=0' style='color:red;text-align: center'>분실 취소</a>";
-else echo "정상<br/><br/><a href='reader_guashi_do.php?id=1' style='color:red;text-align: center'>분실</a>";
+if($resulta['card_state']==0) echo "<br/><img src=\"image/gua.png\"><br/><a href='reader_guashi_do.php?id=0' style='color:red;text-align: center'>분실 취소</a>";
+else echo "<br/><img src=\"image/normal.png\"><br/><a href='reader_guashi_do.php?id=1' style='color:red;text-align: center'>분실</a>";
 
 ?>
 </h4>

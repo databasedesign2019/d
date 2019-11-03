@@ -3,11 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_borrow_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_borrow_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book_guihuan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_guihuan.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book_jiechu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_jiechu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_notice.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_notice_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice_add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_qna.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_qna.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_guashi.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_guashi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reader_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_qna.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_qna.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_qna_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_qna_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_info_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_info_edit.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +39,6 @@
     </option>
     <expand />
     <select />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>boid</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -147,7 +148,8 @@
       <workItem from="1572588765768" duration="81000" />
       <workItem from="1572606865489" duration="17821000" />
       <workItem from="1572627811387" duration="513000" />
-      <workItem from="1572711818469" duration="57000" />
+      <workItem from="1572711818469" duration="1215000" />
+      <workItem from="1572774720272" duration="16174000" />
     </task>
     <servers />
   </component>

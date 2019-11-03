@@ -87,9 +87,9 @@ include ('mysqli_connect.php');
         <th>구분명</th>
         <th> 책장호</th>
         <th> 상태</th>
-        <th>조작</th>
-        <th>조작</th>
-        <th>조작</th>
+        <th>수정</th>
+        <th>삭제</th>
+        <th>대출</th>
     </tr>
     <?php
 
@@ -121,10 +121,10 @@ include ('mysqli_connect.php');
         echo "<td>{$row['class_name']}</td>";
         echo "<td>{$row['pressmark']}</td>";
          if($row['state']==1) echo "<td>재관</td>"; else if($row['state']==0) echo "<td>대여중</td>";else  echo "<td>상태 정보 없음</td>";
-        echo "<td><a href='admin_book_edit.php?id={$row['book_id']}'>수정</a></td>";
-        echo "<td><a href='admin_book_del.php?id={$row['book_id']}'>삭제</a></td>";
-        if($row['state']==1)echo "<td><a href='admin_book_jiechu.php?id={$row['book_id']}'>대여</a></td>";
-        if($row['state']==0)echo "<td><a href='admin_book_guihuan.php?id={$row['book_id']}'>반납</a></td>";
+        echo "<td><a href='admin_book_edit.php?id={$row['book_id']}'><img src='image/xiugai.png'></a></td>";
+        echo "<td><a href='admin_book_del.php?id={$row['book_id']}'><img src='image/delete.png'></a></td>";
+        if($row['state']==1)echo "<td><a href='admin_book_jiechu.php?id={$row['book_id']}'><img src='image/jieyueguanli.png'></a></td>";
+        if($row['state']==0)echo "<td><a href='admin_book_guihuan.php?id={$row['book_id']}'><img src='image/qiandanfanhuan.png'></a></td>";
         echo "</tr>";
     };
     ?>

@@ -100,7 +100,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 
 
-    $sqla="insert into notice VALUES (NULL ,'{$nnam}','{$nt}','{$nco}',{$nc} )";
+    $sqla="insert into notice VALUES (NULL ,'{$nnam}','{$nt}','{$nco}',{$nc})";
     $resa=mysqli_query($dbc,$sqla);
 
 
