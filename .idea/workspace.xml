@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_book_guihuan.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_guihuan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_book_jiechu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book_jiechu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_notice.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_notice_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice_add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_qna.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_qna.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_reader.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_reader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_guashi.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_guashi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_info_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_info_edit.php" afterDir="false" />
-    </list>
+    <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +136,7 @@
       <workItem from="1572606865489" duration="17821000" />
       <workItem from="1572627811387" duration="513000" />
       <workItem from="1572711818469" duration="1215000" />
-      <workItem from="1572774720272" duration="16174000" />
+      <workItem from="1572774720272" duration="16415000" />
     </task>
     <servers />
   </component>
