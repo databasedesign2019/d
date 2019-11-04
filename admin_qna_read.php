@@ -50,13 +50,43 @@ $res=mysqli_query($dbc,$sql);
         <h4 ><br><?php echo $resultb['question']; ?></h4>
                 <h3>Answer | 대답자:<?php echo $resultb["admin_name"];?> </h3>
                 <h4><br><?php echo $resultb['answer']; ?></h4>
-              <div style="text-align:center">  <a href="javascript:window.opener=null;window.open('','_self');window.history.go(-1);"><img src="image/shangyiye.png">지난 페이지</a>|<a href='admin_qna_del.php?id=<?php echo $resultb['qna_id'];?>'><img src="image/delete.png">삭제</a>|<a href='admin_qna_edit.php?id=<?php echo $resultb['qna_id'];?>'><img src="image/xiugai.png">수정</a>
+                <form  action="admin_qna_read.php?id=<?php echo $xgid; ?>"" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
+                <div class="input-group"><span class="input-group-addon">대답하는 관리자</span><input name="admin" type="text" value="<?php echo $userid;?>" class="form-control" readonly="true" /></div><br/>
+                <div class="input-group"><span class="input-group-addon">대답내용</span><input name="nanswer" type="text" value="<?php echo  $resultb['answer'];?>" class="form-control"></div><br/>
+                <label><input type="submit" value="확인" class="btn btn-default"></label>
+                <label><input type="reset" value="리셋" class="btn btn-default"></label>
+            </form>
+
+                <div style="text-align:center">  <a href="javascript:window.opener=null;window.open('','_self');window.history.go(-1);"><img src="image/shangyiye.png">지난 페이지</a>|<a href='admin_qna_del.php?id=<?php echo $resultb['qna_id'];?>'><img src="image/delete.png">삭제</a>|<a href='admin_qna_edit.php?id=<?php echo $resultb['qna_id'];?>'><img src="image/xiugai.png">수정</a>
               </div>
-              </div>
-    </form>
+                <?php
+
+                if ($_SERVER["REQUEST_METHOD"] == "POST")
+                {
+
+                    $nadmin = $_POST["admin"];
+                    $nanswer = $_POST["nanswer"];
+                    $sqld="update qna set admin_id='{$nadmin}',answer='{$nanswer}' where qna_id=$xgid;";
+                    $resd=mysqli_query($dbc,$sqld);
+
+
+                    if($resd==1)
+                    {
+
+                        echo "<script>alert('대답 성공！')</script>";
+                        echo "<script>window.location.href='admin_qna.php'</script>";
+
+                    }
+                    else
+                    {
+                        echo "<script>alert('대답 실패! 다시 력해주세요!');</script>";
+
+                    }}?>
+
+
 
             </div>
-            </form>
+
         </div>
     </div>
 

@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_notice_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice_read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_qna.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_qna.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice1.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice2.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notice_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/notice_read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/26/26d58013c79641023ade7aa516c595de43ecefd56e0dc5ad046876edeee32d28.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/26/26d58013c79641023ade7aa516c595de43ecefd56e0dc5ad046876edeee32d28.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/60/607dd8d29ed32731408b7b1b7e70d009b04762e4b8eb18d103325e6f43b67141.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/60/607dd8d29ed32731408b7b1b7e70d009b04762e4b8eb18d103325e6f43b67141.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/91/91b475c9a689b8388e8e9eb7336c2d46c41bf93006db06771c8989dd034c5ac1.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/91/91b475c9a689b8388e8e9eb7336c2d46c41bf93006db06771c8989dd034c5ac1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Books-Mangement-System-php-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Books-Mangement-System-php-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_qna_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_qna_read.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reader_qna.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_qna.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_querybook.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_querybook.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +14,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/phpMyAdmin4.8.5/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
@@ -49,6 +41,30 @@
     <servers>
       <server host="172.0.0.2" id="9bf9397f-2fd2-4517-997e-cdec6347d27d" name="Unnamed" />
     </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/phpmyadmin/motranslator" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/phpmyadmin/shapefile" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/phpmyadmin/sql-parser" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/tecnickcom/tcpdf" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/twig/extensions" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/google/recaptcha" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/samyoul/u2f-php-server" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/composer" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/phpMyAdmin4.8.5/vendor/paragonie/random_compat" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1SsjyfGSgJYYoBSovFxOb48OObi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -152,7 +168,8 @@
       <workItem from="1572627811387" duration="513000" />
       <workItem from="1572711818469" duration="1215000" />
       <workItem from="1572774720272" duration="16415000" />
-      <workItem from="1572838157901" duration="4621000" />
+      <workItem from="1572838157901" duration="5436000" />
+      <workItem from="1572845489159" duration="5450000" />
     </task>
     <servers />
   </component>
