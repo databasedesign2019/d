@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/404/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/404/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/404/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/500/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/500/error.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/500/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/32/32c4d2466e7614cddaf991f9f07f83ab21257e2d1cbf66e2e156d9120bfd143e.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/a7/a785c0a1d3a5c50f985c595b900aeeefff70a8a36e941d12504b71ac0b4e0dba.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/af/af423d03937dab52265a3c1fece27fee920e3e64a2358910c97fc3c54abb28d7.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/e4/e4f06222c3eb5cc187d4357f3ec275872a6b1b81ad16c23ac0cffdd4d87a9c98.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/ed/ed31945f9a8d696096dfea357a9fe970b3124824c7dfb4614bd5eb0097882726.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/欷戧皠.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_notice_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice_read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_qna_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_qna_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +188,8 @@
       <workItem from="1572838157901" duration="5436000" />
       <workItem from="1572845489159" duration="6564000" />
       <workItem from="1572861846311" duration="6530000" />
-      <workItem from="1572868543350" duration="284000" />
+      <workItem from="1572868543350" duration="372000" />
+      <workItem from="1572869657469" duration="414000" />
     </task>
     <servers />
   </component>
