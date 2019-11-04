@@ -42,7 +42,7 @@ $resultb=mysqli_fetch_array($resb);
         <div class="input-group"><span class="input-group-addon">대답하는 관리자</span><input name="admin" type="text" value="<?php echo $userid;?>" class="form-control" readonly="true" /></div><br/>
         <div class="input-group"><span class="input-group-addon">질문시간</span><input name="ntime" type="text" value="<?php echo $resultb['push_time']; ?>" class="form-control"readonly="true"></div><br/>
         <div class="input-group"><span class="input-group-addon">문의내용</span><input name="nquestion" type="text" value="<?php echo $resultb['question']; ?>" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">대답내용</span><input name="nanswer" type="text" placeholder="대답내용 입력하시오" class="form-control"></div><br/>
+        <div class="input-group"><span class="input-group-addon">대답내용</span><input name="nanswer" type="text"value="<?php echo $resultb['answer']; ?>" class="form-control"></div><br/>
         <label><input type="submit" value="확인" class="btn btn-default"></label>
         <label><input type="reset" value="리셋" class="btn btn-default"></label>
         </div>
