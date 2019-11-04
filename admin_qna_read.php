@@ -74,7 +74,7 @@ $res=mysqli_query($dbc,$sql);
                     {
 
                         echo "<script>alert('대답 성공！')</script>";
-                        echo "<script>window.location.href='admin_qna.php'</script>";
+                        echo "<script>window.location.href='admin_qna_read.php?id=$xgid'</script>";
 
                     }
                     else

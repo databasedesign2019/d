@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Books-Mangement-System-php-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Books-Mangement-System-php-master.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin_qna_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_qna_read.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reader_qna.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_qna.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +166,7 @@
       <workItem from="1572711818469" duration="1215000" />
       <workItem from="1572774720272" duration="16415000" />
       <workItem from="1572838157901" duration="5436000" />
-      <workItem from="1572845489159" duration="5450000" />
+      <workItem from="1572845489159" duration="6564000" />
     </task>
     <servers />
   </component>
