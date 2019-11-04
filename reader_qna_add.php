@@ -34,7 +34,7 @@ $readerid=$_GET['id']
                         <form  action="reader_qna_add.php" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
                             <div id="login">
                                 <div class="input-group"><span class="input-group-addon">제목</span><input name="ntitle" type="text" placeholder="제목 입력하시오" class="form-control"></div><br/>
-                                <div class="input-group"><span class="input-group-addon">user</span><input name="nid" type="text" value="<?php echo $userid;?>" class="form-control" readonly="true" /></div><br/>
+                                <div class="input-group"><span class="input-group-addon">사용자아이디</span><input name="nid" type="text" value="<?php echo $userid;?>" class="form-control" readonly="true" /></div><br/>
                                 <div class="input-group"><span class="input-group-addon">시간</span><input name="ntime" type="text" value="<?php echo $showtime=date("Y-m-d H:i:s");?> " class="form-control"readonly="true"></div><br/>
                                 <div class="input-group"><span class="input-group-addon">문의내용</span><input name="ncontent" type="text" placeholder="내용 입력하시오" class="form-control"></div><br/>
 

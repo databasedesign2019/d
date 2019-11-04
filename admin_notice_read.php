@@ -46,7 +46,7 @@ $res=mysqli_query($dbc,$sql);
             <div class="panel-body">
                 <h3><?php echo $resultb['title']; ?></h3>
                 <h5>시간:<?php echo $resultb['time'];?>  |  분류:<?php echo $resultb['nc_name'];?></h5>
-        <h4><?php echo $resultb['content']; ?></h4>
+        <?php echo $resultb['content']; ?>
                 <a href="javascript:window.opener=null;window.open('','_self');window.history.go(-1);"><img src="image/shangyiye.png">지난 페이지</a>|<a href='admin_notice_del.php?id=<?php echo $resultb['noid'];?>'><img src="image/delete.png">삭제</a>|<a href='admin_notice_edit.php?id=<?php echo $resultb['noid'];?>'><img src="image/xiugai.png">수정</a>
             </div>
     </form>

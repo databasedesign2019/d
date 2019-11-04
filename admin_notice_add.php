@@ -2,11 +2,9 @@
 session_start();
 $userid=$_SESSION['userid'];
 include ('mysqli_connect.php');
-
-
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -73,52 +71,47 @@ include ('mysqli_connect.php');
                 <h3 class="panel-title">공지 증가</h3>
             </div>
             <div class="panel-body">
-                        <form  action="admin_notice_add.php" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
-                            <div id="login">
-                                <div class="input-group"><span class="input-group-addon">제목</span><input name="nname" type="text" placeholder="제목 입력하시오" class="form-control"></div><br/>
-                                <div class="input-group"><span class="input-group-addon">시간</span><input name="ntime" type="text" value="<?php echo $showtime=date("Y-m-d H:i:s");?>" class="form-control"></div><br/>
-                                <div class="input-group"><span class="input-group-addon">내용</span><input name="ncontent" type="text" placeholder="내용 입력하시오" class="form-control"></div><br/>
-                                <div class="input-group"><span class="input-group-addon">구분<select id="box" select name="nclass"><option value="1">공지</option><option value="2">광고</option><option value="3">이벤트</option><option value="4">뉴스</option></select></span> </div><br/>
+                <form  action="admin_notice_add.php" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
+                    <div id="login">
+                        <div class="input-group"><span class="input-group-addon">제목</span><input name="nname" type="text" placeholder="제목 입력하시오" class="form-control"></div><br/>
+                        <div class="input-group"><span class="input-group-addon">시간</span><input name="ntime" type="text" value="<?php echo $showtime=date("Y-m-d H:i:s");?>" class="form-control"></div><br/>
+                        <div class="input-group"><span class="input-group-addon">내용</span><input name="ncontent" type="text" placeholder="내용 입력하시오" class="form-control"></div><br/>
+                        <div class="input-group"><span class="input-group-addon">구분<select id="box" select name="nclass"><option value="1">공지</option><option value="2">광고</option><option value="3">이벤트</option><option value="4">뉴스</option></select></span> </div><br/>
 
-                                <label><input type="submit" value="추가" class="btn btn-default"></label>
-                                <label><input type="reset" value="리셋" class="btn btn-default"></label>
+                        <label><input type="submit" value="추가" class="btn btn-default"></label>
+                        <label><input type="reset" value="리셋" class="btn btn-default"></label>
                     </div>
-                        </form>
+                </form>
             </div>
         </div>
 
-</div>
-<?php
+    </div>
+    <?php
 
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-{
-    $nnam = $_POST["nname"];
-    $nt = $_POST["ntime"];
-    $nco = $_POST["ncontent"];
-    $nc = $_POST["nclass"];
-
-
-
-
-    $sqla="insert into notice VALUES (NULL ,'{$nnam}','{$nt}','{$nco}',{$nc})";
-    $resa=mysqli_query($dbc,$sqla);
-
-
-    if($resa==1)
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
+        $nnam = $_POST["nname"];
+        $nt = $_POST["ntime"];
+        $nco = $_POST["ncontent"];
+        $nc = $_POST["nclass"];
 
-        echo "<script>alert('추가 성공！')</script>";
-        echo "<script>window.location.href='admin_notice.php'</script>";
 
+
+
+        $sqla="insert into notice VALUES (NULL ,'{$nnam}','{$nt}','{$nco}',{$nc})";
+        $resa=mysqli_query($dbc,$sqla);
+
+
+        if($resa==1)
+        {
+            echo "<script>alert('추가 성공！')</script>";
+            echo "<script>window.location.href='admin_notice.php'</script>";
+        }
+        else
+        {
+            echo "<script>alert('추가 실패! 다시 입력해주세요！');</script>";
+        }
     }
-    else
-    {
-        echo "<script>alert('추가 실패! 다시 입력해주세요！');</script>";
-
-    }
-
-}
-
-?>
+    ?>
 </body>
 </html>

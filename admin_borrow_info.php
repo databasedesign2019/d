@@ -110,11 +110,16 @@ where book_info.book_id=lend_list.book_id;";
         echo "<td>{$row['lend_date']}</td>";
         echo "<td>{$row['yhrq']}</td>";
         echo "<td>{$row['back_date']}</td>";
-        echo "<td>"; if($row['back_date']!=null) echo"반납</td>";else echo "미반납</td>";
-        echo "<td>"; if(date("Y-m-d")>$row['yhrq']) echo"초기</td>";else echo "미초기</td>";
+        echo "<td>"; if($row['back_date']!=null) echo"<img src=\"image/yes.png\"></td>";else echo "<img src=\"image/no.png\"></td>";
+        echo "<td>"; if(date("Y-m-d")>$row['yhrq']) echo"<img src=\"image/over.png\"></td>";else echo "<img src=\"image/overna.png\"></td>";
         echo "</tr>";
     };
     ?>
+
 </table>
+
 </body>
 </html>
+
+
+

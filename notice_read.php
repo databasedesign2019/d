@@ -62,9 +62,9 @@ $res=mysqli_query($dbc,$sql);
                 <h3 class="panel-title">공지상황</h3>
             </div>
             <div class="panel-body">
-                <h2><?php echo $resultb['title']; ?></h2>
-                <h5>시간:<?php echo $resultb['time'];?>  |  분류:<?php echo $resultb['nc_name'];?></h5>
-        <h6><?php echo $resultb['content']; ?></h6>
+                <h4><?php echo $resultb['title']; ?></h4>
+                <h6>시간:<?php echo $resultb['time'];?>  |  분류:<?php echo $resultb['nc_name'];?></h6>
+        <h5><?php echo $resultb['content']; ?></h5>
                 <a href="javascript:window.opener=null;window.open('','_self');window.history.go(-1);">지난 페이지</a>
             </div>
     </form>

@@ -9,7 +9,7 @@ if(isset($_SESSION['userid']))
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>고온진도서관 || 로그인</title>
+    <title>도서관 || 로그인</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -31,7 +31,7 @@ if(isset($_SESSION['userid']))
     <div style="text-align: center">
     <div class="panel panel-primary">
         <div class="panel-heading">
-            <h3 class="panel-title">도서관관리시스템</h3>
+            <h3 class="panel-title">로그인</h3>
         </div>
         <div class="panel-body">
             <form  action="login_check.php" method="POST" class="bs-example bs-example-form" role="form">

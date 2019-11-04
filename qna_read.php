@@ -47,6 +47,7 @@ $resultb=mysqli_fetch_array($resb);
 <body>
 <?php if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
+
 $sql="select qna_id,title,push_time,question,answer,name,admin_name  from  reader_info,qna,admin where qna_id={$_GET['id']} and qna.reader_id=reader_info.reader_id and qna.admin_id=admin.admin_id ;";
 }
 else{
@@ -68,6 +69,7 @@ $res=mysqli_query($dbc,$sql);
                 <h4 > <br><?php echo $resultb['question']; ?></h4>
                 <h3>Answer | 대답자:<?php echo $resultb["admin_name"];?> </h3>
                 <h4> <br><?php echo $resultb['answer']; ?></h4>
+
               <div  style="text-align:center">  <a href="javascript:window.opener=null;window.open('','_self');window.history.go(-1);"><img src="image/shangyiye.png">지난 페이지</a>
 
               </div>

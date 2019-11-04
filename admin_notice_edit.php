@@ -19,10 +19,9 @@ $resultb=mysqli_fetch_array($resb);
     <style>
         body{
             width: 100%;
-            overflow: hidden;
             background: url("bg.jpg") repeat;
             background-size:cover;
-            color: antiquewhite;
+            color: black;
         }
 
     </style>
@@ -36,17 +35,17 @@ $resultb=mysqli_fetch_array($resb);
                 <h3 class="panel-title">공지 정보 수정</h3>
             </div>
             <div class="panel-body">
-    <form  action="admin_notice_edit.php?id=<?php echo $xgid; ?>"" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
-    <div id="login">
+                <form  action="admin_notice_edit.php?id=<?php echo $xgid; ?>"" method="POST" style="text-align: center" class="bs-example bs-example-form" role="form">
+                <div id="login">
 
-        <div class="input-group"><span class="input-group-addon">제목</span><input name="nname" type="text" value="<?php echo $resultb['title']; ?>" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">시간</span><input name="ntime" type="text" value="<?php echo $resultb['time']; ?>" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">내용</span><input name="ncontent" type="text"value="<?php echo $resultb['content']; ?>" class="form-control"></div><br/>
-        <div class="input-group"><span class="input-group-addon">구분<select id="box3" select name="nclass"><option value="1">공지</option><option value="2">광고</option><option value="3">이벤트</option><option value="4">뉴스</option></select></span> </div><br/>
-        <label><input type="submit" value="확인" class="btn btn-default"></label>
-        <label><input type="reset" value="리셋" class="btn btn-default"></label>
-        </div>
-    </form>
+                    <div class="input-group"><span class="input-group-addon">제목</span><input name="nname" type="text" value="<?php echo $resultb['title']; ?>" class="form-control"></div><br/>
+                    <div class="input-group"><span class="input-group-addon">시간</span><input name="ntime" type="text" value="<?php echo $resultb['time']; ?>" class="form-control"></div><br/>
+                    <div class="input-group"><span class="input-group-addon">내용</span><input name="ncontent" type="text"value="<?php echo $resultb['content']; ?>" class="form-control"></div><br/>
+                    <div class="input-group"><span class="input-group-addon">구분<select id="box3" select name="nclass"><option value="1">공지</option><option value="2">광고</option><option value="3">이벤트</option><option value="4">뉴스</option></select></span> </div><br/>
+                    <label><input type="submit" value="확인" class="btn btn-default"></label>
+                    <label><input type="reset" value="리셋" class="btn btn-default"></label>
+                </div>
+                </form>
 
             </div>
             </form>

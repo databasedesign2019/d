@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/no.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/over.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/overna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/yes.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_qna_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_qna_read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_borrow_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_borrow_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_notice_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice_add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_notice_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice_edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_notice_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice_read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/noanswer.png" beforeDir="false" afterPath="$PROJECT_DIR$/image/noanswer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notice_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/notice_read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qna_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/qna_read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_qna_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_qna_add.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +25,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/phpMyAdmin4.8.5/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -64,10 +78,18 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1SsjyfGSgJYYoBSovFxOb48OObi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -167,6 +189,7 @@
       <workItem from="1572774720272" duration="16415000" />
       <workItem from="1572838157901" duration="5436000" />
       <workItem from="1572845489159" duration="6564000" />
+      <workItem from="1572861846311" duration="6348000" />
     </task>
     <servers />
   </component>
@@ -185,6 +208,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="masterDetails">
     <states>
