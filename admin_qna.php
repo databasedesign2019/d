@@ -81,10 +81,7 @@ include ('mysqli_connect.php');
         <th>질문자</th>
         <th>제목</th>
         <th>시간</th>
-        <th>질문</th>
-        <th>대답</th>
         <th>대답자</th>
-        <th>대답</th>
         <th>사젝</th>
     </tr>
     <?php
@@ -106,12 +103,9 @@ include ('mysqli_connect.php');
         echo "<tr>";
         echo "<td>{$row['qna_id']}</td>";
         echo "<td>{$row['name']}</td>";
-        echo "<td>{$row['title']}</td>";
+        echo "<td><a target='_top' href='admin_qna_read.php?id={$row['qna_id']}'>{$row['title']}</a></td>";
         echo "<td>{$row['push_time']}</td>";
-        echo "<td>{$row['question']}</td>";
-        echo "<td>{$row['answer']}</td>";
         echo "<td>{$row['admin_name']}</td>";
-        echo "<td><a href='admin_qna_edit.php?id={$row['qna_id']}'><img src='image/huida.png'></a></td>";
         echo "<td><a href='admin_qna_del.php?id={$row['qna_id']}'><img src='image/delete.png'></a></td>";
         echo "</tr>";
     };

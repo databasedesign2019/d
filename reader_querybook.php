@@ -106,7 +106,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
                 echo "<td>{$row['pubdate']}</td>";
                 echo "<td>{$row['class_name']}</td>";
                 echo "<td>{$row['pressmark']}</td>";
-                if($row['state']==1) echo "<td>태출가능</td>"; else if($row['state']==0) echo "<td>태출중</td>";else  echo "<td>상태 정보 없음</td>";
+                if($row['state']==1) echo "<td><img src=\"image/bookno.png\"></td>"; else if($row['state']==0) echo "<td><img src=\"image/boed.png\"></td>";else  echo "<td><img src=\"image/nos.png\"></td>";
                 echo "</tr>";
             };
         };

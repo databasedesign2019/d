@@ -120,7 +120,7 @@ include ('mysqli_connect.php');
         echo "<td>{$row['class_id']}</td>";
         echo "<td>{$row['class_name']}</td>";
         echo "<td>{$row['pressmark']}</td>";
-         if($row['state']==1) echo "<td>재관</td>"; else if($row['state']==0) echo "<td>대여중</td>";else  echo "<td>상태 정보 없음</td>";
+         if($row['state']==1) echo "<td><img src=\"image/bookno.png\"></td>"; else if($row['state']==0) echo "<td><img src=\"image/boed.png\"></td>";else  echo "<td><img src=\"image/nos.png\"></td>";
         echo "<td><a href='admin_book_edit.php?id={$row['book_id']}'><img src='image/xiugai.png'></a></td>";
         echo "<td><a href='admin_book_del.php?id={$row['book_id']}'><img src='image/delete.png'></a></td>";
         if($row['state']==1)echo "<td><a href='admin_book_jiechu.php?id={$row['book_id']}'><img src='image/jieyueguanli.png'></a></td>";

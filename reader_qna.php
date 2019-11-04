@@ -13,6 +13,10 @@ include ('mysqli_connect.php');
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
+        a:link{text-decoration: none;color: black}
+        a:active{text-decoration:blink}
+        a:hover{text-decoration:underline;color: red}
+        a:visited{text-decoration: none;color: whitesmoke}
         body{
             width: 100%;
             background-repeat: repeat;
@@ -58,8 +62,6 @@ include ('mysqli_connect.php');
         <th>질문자</th>
         <th>제목</th>
         <th>시간</th>
-        <th>질문</th>
-        <th>대답</th>
         <th>대답자</th>
     </tr>
     <?php
@@ -78,10 +80,8 @@ include ('mysqli_connect.php');
     foreach ($res as $row){
         echo "<td>{$row['qna_id']}</td>";
         echo "<td>{$row['name']}</td>";
-        echo "<td>{$row['title']}</td>";
+        echo "<td><a target='_top' href='qna_read.php?id={$row['qna_id']}'>{$row['title']}</a></td>";
         echo "<td>{$row['push_time']}</td>";
-        echo "<td>{$row['question']}</td>";
-        echo "<td>{$row['answer']}</td>";
         echo "<td>{$row['admin_name']}</td>";
         echo "</tr>";
     };

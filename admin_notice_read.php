@@ -18,7 +18,6 @@ $resultb=mysqli_fetch_array($resb);
     <style>
         body{
             width: 100%;
-            overflow: hidden;
             background: url("bg.jpg") repeat;
             background-size:cover;
             color: black;

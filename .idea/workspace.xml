@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="" />
+    <list default="true" id="5c6f48ad-d355-401a-a091-855da85a609d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_book.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_book.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_notice_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_notice_read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_qna.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_qna.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notice1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notice2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notice3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notice_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/notice_read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/26/26d58013c79641023ade7aa516c595de43ecefd56e0dc5ad046876edeee32d28.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/26/26d58013c79641023ade7aa516c595de43ecefd56e0dc5ad046876edeee32d28.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/60/607dd8d29ed32731408b7b1b7e70d009b04762e4b8eb18d103325e6f43b67141.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/60/607dd8d29ed32731408b7b1b7e70d009b04762e4b8eb18d103325e6f43b67141.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/91/91b475c9a689b8388e8e9eb7336c2d46c41bf93006db06771c8989dd034c5ac1.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpMyAdmin4.8.5/tmp/twig/91/91b475c9a689b8388e8e9eb7336c2d46c41bf93006db06771c8989dd034c5ac1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_qna.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_qna.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reader_querybook.php" beforeDir="false" afterPath="$PROJECT_DIR$/reader_querybook.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +152,7 @@
       <workItem from="1572627811387" duration="513000" />
       <workItem from="1572711818469" duration="1215000" />
       <workItem from="1572774720272" duration="16415000" />
+      <workItem from="1572838157901" duration="4621000" />
     </task>
     <servers />
   </component>
