@@ -16,11 +16,11 @@ include ('mysqli_connect.php');
     <style>
         body{
             width: 100%;
-            overflow: hidden;
             background: url("bg.jpg") repeat;
             background-size:cover;
             color: antiquewhite;
         }
+		a{color:#ffffff}
     </style>
 </head>
 <body>
@@ -101,7 +101,33 @@ $sql="select count(*) b from qna where admin_id=0001;";
 $res=mysqli_query($dbc,$sql);
 $result=mysqli_fetch_array($res);
 echo "미처리 문의는 {$result['b']}개 보유"; ?></h5>
+<h4>오늘 생일 사용자</h4>
+<table  width='100%' class="table">
+ <div style="text-align: center">
+    <tr>
+        <th>사용자 번호</th>
+        <th>성함</th>
+        <th>생일</th>
+        <th>이메일</th>
 
+    </tr>
+    <?php
+
+        $sql="select reader_id,name,birth,email from reader_info where MONTH(birth) = MONTH(NOW()) and DAY(birth) = DAY(NOW());";
+    
+
+    $res=mysqli_query($dbc,$sql);
+    foreach ($res as $row){
+        echo "<tr>";
+        echo "<td>{$row['reader_id']}</td>";
+        echo "<td>{$row['name']}</td>";
+        echo "<td>{$row['birth']}</td>";
+        echo "<td><a href=\"mailto:{$row['email']}\">{$row['email']}</a></td>";
+        echo "</tr>";
+    };
+    ?>
+</table>
+</div>
 <div id="bot" style="text-align: center;font-size:15px;position:absolute;left:32%;bottom:30px "><i style="text-align: center">2019-2데이타베이스 20161795 GUJIAKAI|20174950 WENJIALI|20170855 CHENWENXI</i></div>
 
 
