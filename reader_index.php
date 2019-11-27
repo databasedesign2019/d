@@ -63,7 +63,18 @@ date_default_timezone_set("Asia/Seoul");
 </h4>
 
     <br/><br/><h3 style="text-align: center"><?php echo $result['name'];  ?> 님,안녕하십니까?</h3><br/>
-    <h4 style="text-align: center"><?php
+	<h4 style="text-align: center; color:red">
+		<?php
+        $sqlx="select * from reader_info where MONTH(birth) = MONTH(NOW()) and DAY(birth) = DAY(NOW()) and reader_id={$userid}";
+        $resx=mysqli_query($dbc,$sqlx);
+        $resultx=mysqli_fetch_array($resx);
+		if($resultx==0)
+        echo "Have a nice day";
+		else echo "Happy birthday";
+        ?>
+    </h4>
+   
+   <h4 style="text-align: center"><?php
         $sqla="select count(*) a from lend_list where reader_id={$userid} and back_date is NULL;";
 
         $resa=mysqli_query($dbc,$sqla);
@@ -86,8 +97,14 @@ date_default_timezone_set("Asia/Seoul");
 
 
         ?></h4>
+		   <h4 style="text-align: center"><?php
+        $sqla="select count(*) a from lend_list where reader_id={$userid} and back_date is NULL;";
 
-
+        $resa=mysqli_query($dbc,$sqla);
+        $resulta=mysqli_fetch_array($resa);
+        echo "당신 지금 까지 빌려한 책은 {$resulta['a']}권입니다";
+        ?>
+    </h4>
 
 <div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
     <div style="text-align: center">
