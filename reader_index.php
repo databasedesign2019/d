@@ -69,8 +69,8 @@ date_default_timezone_set("Asia/Seoul");
         $resx=mysqli_query($dbc,$sqlx);
         $resultx=mysqli_fetch_array($resx);
 		if($resultx==0)
-        echo "Have a nice day";
-		else echo "Happy birthday";
+        echo "<img src='image/sunny.png'>Have a nice day";
+		else echo "<img src='image/birthdaycake.png'>Happy birthday";
         ?>
     </h4>
    
@@ -106,7 +106,7 @@ date_default_timezone_set("Asia/Seoul");
         ?>
     </h4>
 
-<div class="col-xs-5 col-md-offset-3" style="position: relative;top: 25%">
+<div class="col-lg-2" style="position: relative;top: 25%\\">
     <div style="text-align: center">
         <div class="panel panel-primary">
             <div class="panel-heading">
